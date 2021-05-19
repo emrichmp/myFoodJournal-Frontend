@@ -14,6 +14,7 @@ installation instructions
 Explain how project works
 
 ### Contact Info
+If you have any questions about this app or want to contact me in general, please email me at emrichmp@gmail.com
 
 ### License
 Copyright 2021 Emrich-Michael Perrier
