@@ -1,4 +1,6 @@
 # To-do
+[] - fix readme
+[] - start front end
 
 # Requirements
 
