@@ -1,17 +1,18 @@
+# myFoodJournal!
 Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
 
 ### The Problem
 problem app is addressing
 
-# The Solution
+### The Solution
 how app is solving it
 
-# installation
+### installation
 installation instructions
 
-# Project Explained
+### Project Explained
 Explain how project works
 
-# Contact Info
+### Contact Info
 
-# Liscense
+### Liscense
