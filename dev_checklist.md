@@ -1,7 +1,7 @@
 # To-do
 [] - fix readme
 [] - start front end
-[] - Change port
+[X] - Change port
 [] - start nav bar
 [] - look at layout
 [] - 
