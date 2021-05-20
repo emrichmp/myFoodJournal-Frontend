@@ -1,11 +1,12 @@
 import React from 'react';
 import { MenuItems } from "./MenuItems"
+import './Navbar.css'
 
 class Navbar extends React.Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">React</h1>
+                <h1 className="navbar-logo"></h1>
                 <div className="menu-icon">
                     
                 </div>
