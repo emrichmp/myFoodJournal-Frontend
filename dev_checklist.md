@@ -2,7 +2,7 @@
 [] - fix readme
 [] - start front end
 [X] - Change port
-[] - start nav bar
+[] - finish Nav bar
 [] - look at layout
 [] - 
 
