@@ -8,7 +8,8 @@ class Navbar extends React.Component {
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo"></h1>
-                <div className="menu-icon">
+                <div className="menu-icon" onClick={this.handleClick}>
+                    
                     
                 </div>
                 <ul>
