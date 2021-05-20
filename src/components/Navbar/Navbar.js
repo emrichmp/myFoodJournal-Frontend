@@ -3,6 +3,7 @@ import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 
 class Navbar extends React.Component {
+    state = {clicked: false}
     render() {
         return (
             <nav className="NavbarItems">
