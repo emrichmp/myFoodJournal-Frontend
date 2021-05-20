@@ -1,10 +1,10 @@
 # To-do
+[] - Goal: to make app mobile friendly
 [] - fix readme
 [] - start front end
 [X] - Change port
 [] - finish Nav bar
 [] - look at layout
-[] - Goal: to make app mobile friendly
 
 # Requirements
 
