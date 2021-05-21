@@ -20,6 +20,8 @@
     - Edit button -> renders form to change it
 
 [] myHistory
+    - Shows date
+        - under shoes calories consumed, calories goals and the deficit
 
 [] TDEE calc
 
