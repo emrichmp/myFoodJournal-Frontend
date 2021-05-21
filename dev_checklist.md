@@ -6,6 +6,16 @@
 [X] - finish Nav bar
 [] - look at layout
 
+[] Login/sign up page
+
+[] myDiary page
+
+[] myGoals page 
+
+[] myHistory
+
+[] TDEE calc
+
 # Requirements
 
 [ ] - The code should be written in ES6 as much as possible
