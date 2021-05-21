@@ -7,8 +7,13 @@
 [] - look at layout
 
 [] Login/sign up page
+    - form for login
+    - link to sign up page
 
 [] myDiary page
+    - List meals
+    - List foods under meals
+    - add form under each meal after foods to add a food
 
 [] myGoals page 
 
