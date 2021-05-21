@@ -7,6 +7,18 @@
     font-size: 1.2rem;
 }
 
+.navbar-logo {
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.fa-weight {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -28,4 +40,8 @@
     background: #6d76f7;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: white
 }

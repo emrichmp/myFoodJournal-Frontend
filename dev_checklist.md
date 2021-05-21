@@ -3,7 +3,7 @@
 [] - fix readme
 [X] - start front end
 [X] - Change port
-[] - finish Nav bar
+[X] - finish Nav bar
 [] - look at layout
 
 # Requirements
