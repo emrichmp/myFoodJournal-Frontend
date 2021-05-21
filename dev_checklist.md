@@ -1,5 +1,5 @@
 # To-do
-[] - Goal: to make app mobile friendly
+[] - Stretch Goal: to make app mobile friendly
 [] - fix readme
 [X] - start front end
 [X] - Change port
