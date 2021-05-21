@@ -16,6 +16,7 @@
     - add form under each meal after foods to add a food
 
 [] myGoals page 
+    - Section for Calorie and Macro goals
 
 [] myHistory
 
