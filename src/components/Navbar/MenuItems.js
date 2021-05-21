@@ -1,9 +1,9 @@
 export const MenuItems = [
-    {
-        title: 'myFoodJournal',
-        url: '#',
-        cName: 'nav-links'
-    },
+    // {
+    //     title: 'myFoodJournal',
+    //     url: '#',
+    //     cName: 'nav-links'
+    // },
     {
         title: 'myDiary',
         url: '#',
@@ -20,7 +20,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Calorie Calculator',
+        title: 'TDEE',
         url: '#',
         cName: 'nav-links'
     },
