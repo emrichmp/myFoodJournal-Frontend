@@ -17,6 +17,7 @@
 
 [] myGoals page 
     - Section for Calorie and Macro goals
+    - Edit button -> renders form to change it
 
 [] myHistory
 
