@@ -6,7 +6,7 @@ export const MenuItems = [
     // },
     {
         title: 'myDiary',
-        url: '/',
+        url: '/#',
         cName: 'nav-links'
     },
     {
