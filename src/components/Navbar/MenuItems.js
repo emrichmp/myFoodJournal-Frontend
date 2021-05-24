@@ -21,7 +21,7 @@ export const MenuItems = [
     },
     {
         title: 'TDEE',
-        url: '#',
+        url: '/tdee',
         cName: 'nav-links'
     },
     {
