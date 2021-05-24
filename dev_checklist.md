@@ -5,6 +5,7 @@
 [X] - Change port
 [X] - finish Nav bar
 [] - look at layout
+[X] - Get all components linked and loaded
 
 [] Login/sign up page
     - form for login
