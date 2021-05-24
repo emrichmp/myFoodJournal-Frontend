@@ -8,6 +8,7 @@ import {
 import Tdee from "./components/Tdee"
 import Mydiary from './components/myDiary';
 import Mygoals from './components/myGoals';
+import myHistory from './components/myHistory';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/tdee" component={Tdee}/>
           <Route exact path="/" component={Mydiary}/>
           <Route exact path="/myGoals" component={Mygoals}/>
+          <Route exact path="/myHistory" component={myHistory}/>
         </div>
       </HashRouter>
     </div>
