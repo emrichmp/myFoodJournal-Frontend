@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <HashRouter>
         <Navbar />
-        <Mydiary />
         <div className="content">
           <Route exact path="/tdee" component={Tdee}/>
+          <Route exact path="/" component={Mydiary}/>
         </div>
       </HashRouter>
     </div>

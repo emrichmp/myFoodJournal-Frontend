@@ -3,7 +3,9 @@ import React from 'react';
 class Mydiary extends React.Component {
     render () {
         return(
-            <div>test</div>
+            <div>
+                <h2> myDiary! </h2>
+            </div>
         )
     }
 }
