@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Tdee from "./components/Tdee"
 import Mydiary from './components/myDiary';
+import Mygoals from './components/myGoals';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <div className="content">
           <Route exact path="/tdee" component={Tdee}/>
           <Route exact path="/" component={Mydiary}/>
+          <Route exact path="/myGoals" component={Mygoals}/>
         </div>
       </HashRouter>
     </div>
