@@ -30,9 +30,9 @@
         - sex
         - calculates calories
     - Takes calc calories and does macro split of...
-    - 1 g Protein per gram of bw
-    - 20% calories in fat
-    - rest in carbs
+        - 1 g Protein per gram of bw
+        - 20% calories in fat
+        - rest in carbs
 
 # Requirements
 
