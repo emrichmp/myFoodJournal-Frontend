@@ -5,7 +5,7 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
-import Tdee from "./Tdee"
+import Tdee from "./components/Tdee"
 
 function App() {
   return (
