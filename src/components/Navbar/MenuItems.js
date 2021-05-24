@@ -6,17 +6,17 @@ export const MenuItems = [
     // },
     {
         title: 'myDiary',
-        url: '#',
+        url: '/',
         cName: 'nav-links'
     },
     {
         title: 'myGoals',
-        url: '#',
+        url: '/myGoals',
         cName: 'nav-links'
     },
     {
         title: 'myHistory',
-        url: '#',
+        url: '/myHistory',
         cName: 'nav-links'
     },
     {
@@ -26,7 +26,7 @@ export const MenuItems = [
     },
     {
         title: 'Logout',
-        url: '#',
+        url: '/logout',
         cName: 'nav-links'
     },
 ]
