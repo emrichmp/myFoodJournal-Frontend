@@ -4,7 +4,7 @@ class Mydiary extends React.Component {
     render () {
         return(
             <div>
-                <h2 className="myDiary-Header"> myDiary! </h2>
+                <h2 className="Header"> myDiary! </h2>
             </div>
         )
     }
