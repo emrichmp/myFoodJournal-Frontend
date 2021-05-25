@@ -18,3 +18,28 @@ body {
   align-items: center;
   font-family: 'Pattaya', sans-serif;
 }
+
+.tdee-form {
+  color: white;
+  padding: 0.5rem 7rem;
+}
+
+.tdee-inputs{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.tdee-inputs:focus {
+  border: 1px solid #555;
+}
+
+select {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}

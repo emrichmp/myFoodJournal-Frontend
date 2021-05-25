@@ -8,11 +8,11 @@ class Tdee extends React.Component {
                 <form className="tdee-form">
                     <label>
                         Weight:
-                        <input type="text"/>
+                        <input className="tdee-inputs" type="text"/>
                     </label>
                     <label>
                         Age:
-                        <input type="text" />
+                        <input className="tdee-inputs" type="text" />
                     </label>
                     <label>
                         Sex:
