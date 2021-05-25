@@ -4,7 +4,7 @@ class Tdee extends React.Component {
     render () {
         return (
             <div>
-                <h2> Calorie and Macro Calculator </h2>
+                <h1 className="Header"> Calorie and Macro Calculator </h1>
             </div>
         )
     }

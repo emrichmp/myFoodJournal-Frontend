@@ -4,7 +4,7 @@ class Mygoals extends React.Component {
     render () {
         return(
             <div>
-                <h2 className="Header"> myGoals! </h2>
+                <h1 className="Header"> myGoals! </h1>
             </div>
         )
     }
