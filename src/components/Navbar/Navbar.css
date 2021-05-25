@@ -47,3 +47,17 @@
 .fa-bars {
     color: white
 }
+
+.logout {
+    background-color: rgb(20, 187, 238);
+    border-radius: 3%;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.logout:hover {
+    background: rgb(126, 205, 230);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
