@@ -4,8 +4,9 @@
 [X] - start front end
 [X] - Change port
 [X] - finish Nav bar
-[] - look at layout
+[X] - look at layout
 [X] - Get all components linked and loaded
+[X] - use onChange and state to make input only number for age form
 
 [] Login/sign up page
     - form for login
