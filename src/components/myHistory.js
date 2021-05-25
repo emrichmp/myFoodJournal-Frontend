@@ -4,7 +4,7 @@ class myHistory extends React.Component {
     render () {
         return(
             <div>
-                <h2> myHistory! </h2>
+                <h2 className="Header"> myHistory! </h2>
             </div>
         )
     }
