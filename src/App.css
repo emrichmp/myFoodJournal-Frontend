@@ -7,5 +7,9 @@
 body {
   background-color: rgb(88, 123, 219);
   font-size: 1.2rem;
+}
+
+.myDiary-Header {
   color: white;
+  
 }
