@@ -6,7 +6,8 @@
 [X] - finish Nav bar
 [X] - look at layout
 [X] - Get all components linked and loaded
-[X] - use onChange and state to make input only number for age form
+[] - use onChange and state to make input only number for age form
+
 
 [] Login/sign up page
     - form for login
@@ -27,9 +28,9 @@
 
 [] TDEE calc
     - Form for inputs...
-        - weight
-        - age
-        - sex
+        [X] - weight
+        [X] - age
+        [X] - sex
         - calculates calories
     - Takes calc calories and does macro split of...
         - 1 g Protein per gram of bw
