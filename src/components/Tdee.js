@@ -21,7 +21,7 @@ class Tdee extends React.Component {
                             <option value="female">Female</option>
                         </select>
                     </label>
-                    <input type="submit" value="Calculate!" />
+                    <input type="submit" value="Calculate Macros!" />
                 </form>
             </div>
         )
