@@ -33,6 +33,9 @@ class Tdee extends React.Component {
                     </label>
                     <input type="submit" value="Calculate Macros!" />
                 </form>
+                <div className="result">
+                    hi
+                </div>
             </div>
         )
     }
