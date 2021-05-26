@@ -41,8 +41,11 @@ class Tdee extends React.Component {
                     </label>
                     <input type="submit" value="Calculate Macros!" />
                 </form>
+                <div className="result-text">
+                    Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
+                </div>
                 <div className="result">
-                    Here is your estimated calorie consumption based on your goals and a recommended macro breakdown
+                    
                 </div>
             </div>
         )

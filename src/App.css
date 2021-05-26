@@ -64,6 +64,11 @@ input[type=submit]:hover {
   background-color: rgb(135, 206, 150);
 }
 
-.result {
+.result-text {
+  width: 100%;
+  height: 40px;
+  display: flex;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
