@@ -26,6 +26,7 @@
 [] myHistory
     - Shows date
         - under shoes calories consumed, calories goals and the deficit
+    - pulls all journal instances that belongs to that user
 
 [] TDEE calc
     - Form for inputs...
