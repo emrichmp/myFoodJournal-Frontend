@@ -9,7 +9,7 @@ class Tdee extends React.Component {
         let age = this.state.age
         let sex = this.state.sex
         let goal = this.state.goal
-        this.macroCalculator(weight, height, age, sex, goal);
+        this.calorieCalculator(weight, height, age, sex, goal);
         //console.log(weight, height, age, sex, goal);
     }
 
@@ -19,8 +19,21 @@ class Tdee extends React.Component {
     this.setState({[nam]: val});
     }
 
-    macroCalculator(weight, height, age, sex, goal) {
+    calorieCalculator(weight, height, age, sex, goal) {
+        let tdee = 0
         console.log(weight, height, age, sex, goal);
+        if (sex==="female") {
+            tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
+        } else {
+            tdee = 66 + (13.7*weight) + (5*height) - (6.8*age)
+        }
+        if (goal==="maintain") {
+            tdee += 250
+        } else if (goal==="gain") {
+            tdee += 500
+        }
+        console.log(tdee)
+        return tdee
     }
 
     render () {
@@ -29,7 +42,7 @@ class Tdee extends React.Component {
                 <h1 className="Header"> Calorie and Macro Calculator </h1>
                 <form onSubmit= {this.submitHandler} className="tdee-form">
                     <label>
-                        Weight: 
+                        Weight:
                         <input className="tdee-inputs" type="text" name="weight" placeholder="kg" onChange={this.changeHandler} />
                     </label>
                     <label>
@@ -59,9 +72,6 @@ class Tdee extends React.Component {
                 </form>
                 <div className="result-text">
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
-                </div>
-                <div className="result">
-                    
                 </div>
             </div>
         )
