@@ -41,6 +41,7 @@
     - Estimated TDEE algorithm
     Women BMR = 655 + (9.6 X weight in kg) + (1.8 x height in cm) – (4.7 x age in yrs)
     Men BMR = 66 + (13.7 X weight in kg) + (5 x height in cm) – (6.8 x age in yrs)
+    https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee
 
 # Requirements
 
