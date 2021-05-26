@@ -12,6 +12,7 @@
 [] Login/sign up page
     - form for login
     - link to sign up page
+    - form for sign in
 
 [] myDiary page
     - List meals
