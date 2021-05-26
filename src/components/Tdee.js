@@ -31,10 +31,18 @@ class Tdee extends React.Component {
                             <option value="female">Female</option>
                         </select>
                     </label>
+                    <label>
+                        Goal:
+                        <select name="goal">
+                            <option value="lose">lose weight</option>
+                            <option value="gain">gain weight</option>
+                            <option value="maintain">maintain weight</option>
+                        </select>
+                    </label>
                     <input type="submit" value="Calculate Macros!" />
                 </form>
                 <div className="result">
-                    hi
+                    Here is your estimated calorie consumption based on your goals and a recommended macro breakdown
                 </div>
             </div>
         )
