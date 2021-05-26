@@ -73,6 +73,9 @@ class Tdee extends React.Component {
                 <div className="result-text">
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
                 </div>
+                <div className="result">
+                        Calories: Protien: Fats: Carbs:
+                </div>
             </div>
         )
     }
