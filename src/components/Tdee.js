@@ -3,7 +3,10 @@ import React from 'react';
 class Tdee extends React.Component {
 
     state = {
-        rerender: ""
+        tdee: "",
+        tdee_protein: "",
+        tdee_fats: "",
+        tdee_carbs: ""
     }
 
     submitHandler = (event) => {
@@ -14,8 +17,6 @@ class Tdee extends React.Component {
         let sex = this.state.sex
         let goal = this.state.goal
         this.calorieCalculator(weight, height, age, sex, goal);
-        this.setState({rerender: " "})
-        //console.log(weight, height, age, sex, goal);
     }
 
     changeHandler = (event) => {
@@ -26,23 +27,30 @@ class Tdee extends React.Component {
 
     calorieCalculator(weight, height, age, sex, goal) {
         console.log(weight, height, age, sex, goal);
+        let tdee = 0;
         if (sex==="female") {
-            window.tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
+            tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
         } else {
-            window.tdee = 66 + (13.7*weight) + (5*height) - (6.8*age)
+            tdee = 66 + (13.7*weight) + (5*height) - (6.8*age)
         }
         if (goal==="maintain") {
-            window.tdee += 250
+            tdee += 250
         } else if (goal==="gain") {
-            window.tdee += 500
+            tdee += 500
         }
-        console.log(window.tdee)
+        console.log(tdee)
 
-        window.tdee = parseInt(window.tdee)
-        window.tdee_protein = parseInt(2.4*weight)
-        window.tdee_fats = parseInt((0.2*window.tdee)/9)
-        window.tdee_carbs = parseInt(((window.tdee - window.tdee_protein - window.tdee_fats)/4)/1.8)
-        return window.tdee
+        tdee = parseInt(tdee)
+        let tdee_protein = parseInt(2.4*weight)
+        let tdee_fats = parseInt((0.2*tdee)/9)
+        let tdee_carbs = parseInt(((tdee - tdee_protein - tdee_fats)/4)/1.8)
+
+        this.setState({
+            tdee: tdee,
+            tdee_protein: tdee_protein,
+            tdee_fats: tdee_fats,
+            tdee_carbs: tdee_carbs
+        })
     }
 
     render () {
@@ -83,7 +91,7 @@ class Tdee extends React.Component {
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
                 </div>
                 <div className="result">
-                        Calories: {window.tdee} Protein: {window.tdee_protein} Fats: {window.tdee_fats} Carbs: {window.tdee_carbs}
+                        Calories: {this.state.tdee} Protein: {this.state.tdee_protein} Fats: {this.state.tdee_fats} Carbs: {this.state.tdee_carbs}
                 </div>
                 <div className="disclaimer">
                     ** DISCLAIMER: These results are loosely based off the research of Jeff Nippard and the bmr algorithm from the <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee"> Harris-Benedict Equation </a>, you may need to consume slightly more or less calories based on activity level **
