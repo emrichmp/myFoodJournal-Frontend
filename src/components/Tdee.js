@@ -2,6 +2,10 @@ import React from 'react';
 
 class Tdee extends React.Component {
 
+    state = {
+        rerender: ""
+    }
+
     submitHandler = (event) => {
         event.preventDefault()
         let weight = this.state.weight
@@ -10,6 +14,7 @@ class Tdee extends React.Component {
         let sex = this.state.sex
         let goal = this.state.goal
         this.calorieCalculator(weight, height, age, sex, goal);
+        this.setState({rerender: " "})
         //console.log(weight, height, age, sex, goal);
     }
 
@@ -20,20 +25,24 @@ class Tdee extends React.Component {
     }
 
     calorieCalculator(weight, height, age, sex, goal) {
-        let tdee = 0
         console.log(weight, height, age, sex, goal);
         if (sex==="female") {
-            tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
+            window.tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
         } else {
-            tdee = 66 + (13.7*weight) + (5*height) - (6.8*age)
+            window.tdee = 66 + (13.7*weight) + (5*height) - (6.8*age)
         }
         if (goal==="maintain") {
-            tdee += 250
+            window.tdee += 250
         } else if (goal==="gain") {
-            tdee += 500
+            window.tdee += 500
         }
-        console.log(tdee)
-        return tdee
+        console.log(window.tdee)
+
+        window.tdee = parseInt(window.tdee)
+        window.tdee_protein = parseInt(2.4*weight)
+        window.tdee_fats = parseInt((0.2*window.tdee)/9)
+        window.tdee_carbs = parseInt(((window.tdee - window.tdee_protein - window.tdee_fats)/4)/1.8)
+        return window.tdee
     }
 
     render () {
@@ -74,7 +83,7 @@ class Tdee extends React.Component {
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
                 </div>
                 <div className="result">
-                        Calories: Protien: Fats: Carbs:
+                        Calories: {window.tdee} Protein: {window.tdee_protein} Fats: {window.tdee_fats} Carbs: {window.tdee_carbs}
                 </div>
             </div>
         )

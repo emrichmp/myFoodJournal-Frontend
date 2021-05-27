@@ -10,6 +10,11 @@ import Mydiary from './components/myDiary';
 import Mygoals from './components/myGoals';
 import myHistory from './components/myHistory';
 
+window.tdee = 0
+window.tdee_protein = 0
+window.tdee_fats = 0
+window.tdee_carbs = 0
+
 function App() {
   return (
     <div className="App">
