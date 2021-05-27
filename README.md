@@ -8,7 +8,12 @@ I believe that the most effective way to reach a fitness related goal is by trac
 ...Introducing myFoodDiary! This react.js based web app brings all your tracking needs! myFoodDiary lets a user to add food to their meals in their diary. They also may add their goals and macros so they can hit those goals and track along with it. If a user doesn't know where to start they can also use the included TDEE calculator to find an estimated caloric intake and a recommended macro breakdown!
 
 ### installation
-installation instructions
+if you want to experiment with this app or run it locally fork and clone this repo.
+* if you haven't already, go to the backend repo and follow those installation instructions to get that up and running
+* then run ``` npm install ``` to install all dependencies.
+* then run ``` npm start ``` to get the react server started up and navigate to "http://localhost:5000/"
+* and you should be all set!
+
 
 ### Project Explained
 Explain how project works
