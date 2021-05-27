@@ -9,10 +9,10 @@ I believe that the most effective way to reach a fitness related goal is by trac
 
 ### installation
 if you want to experiment with this app or run it locally fork and clone this repo.
-* if you haven't already, go to the backend repo and follow those installation instructions to get that up and running
-* then run ``` npm install ``` to install all dependencies.
-* then run ``` npm start ``` to get the react server started up and navigate to "http://localhost:5000/"
-* and you should be all set!
+1. If you haven't already, go to the backend repo and follow those installation instructions to get that up and running
+2. Then run ``` npm install ``` to install all dependencies.
+3. Then run ``` npm start ``` to get the react server started up and navigate to "http://localhost:5000/"
+4. And you should be all set!
 
 
 ### Project Explained
