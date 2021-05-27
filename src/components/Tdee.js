@@ -23,11 +23,16 @@ class Tdee extends React.Component {
     let nam = event.target.name;
     let val = event.target.value;
     this.setState({[nam]: val});
-    console.log(this.state.age)
+    // let thingy = this.state.age
+    // if (typeof thingy === "number"){
+    //     console.log("hi")
+    // } else { 
+    //     console.log("yeet")
+    // }
     }
 
     calorieCalculator(weight, height, age, sex, goal) {
-        console.log(weight, height, age, sex, goal);
+        //console.log(weight, height, age, sex, goal);
         let tdee = 0;
         if (sex==="female") {
             tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
