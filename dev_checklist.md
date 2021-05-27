@@ -56,5 +56,6 @@
 [ ] - Make use of async actions and redux-thunk middleware to send data to and receive data from a server
 [ ] - Your Rails API should handle the data persistence with a database. You should be using fetch() within your actions to GET and POST data from your API - do not use jQuery methods.
 [ ] - Your client-side application should handle the display of data with minimal data manipulation
-[ ] - Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
+[X] - Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
+    - Styled w/ my CSS
 [ ] - Once your app is complete, fill out the checklist
