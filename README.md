@@ -1,4 +1,6 @@
 # myFoodJournal!
+![logo]
+(https://ibb.co/ctCBXkd)
 Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
 
 ### The Problem
