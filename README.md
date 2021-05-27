@@ -19,7 +19,7 @@ if you want to experiment with this app or run it locally fork and clone this re
 ### Project Explained
 Explain how project works
 
-You can also gain more of my insight and the process of this project here: https://emrichmp.medium.com/
+You can also gain more of my insight and the process of this project on my [Medium Blog!](https://emrichmp.medium.com/)
 
 ### Contact Info
 If you have any questions about this app or want to contact me in general, please email me at emrichmp@gmail.com.
