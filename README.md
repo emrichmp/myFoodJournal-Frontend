@@ -1,4 +1,3 @@
-# myFoodJournal!
 ![logo](https://i.ibb.co/sQ6fJbr/Screen-Shot-2021-05-26-at-11-16-32-PM.png)
 
 Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
