@@ -48,7 +48,7 @@
 
 [ ] - The code should be written in ES6 as much as possible
 [X] - Use the create-react-app generator to start your project.
-[ ] - Your app should have one HTML page to render your react-redux application
+[X] - Your app should have one HTML page to render your react-redux application
 [ ] - There should be 5 stateless components
 [ ] - There should be 3 routes
 [ ] - The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate 
