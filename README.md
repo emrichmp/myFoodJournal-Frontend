@@ -6,7 +6,7 @@ Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
 I believe that the most effective way to reach a fitness related goal is by tracking daily! No matter if your goal is to lose, gain or maintain your weight you need to know how much you're eating. It's all about calories in vs calories out! Eat more calories than you burn? You'll gain weight. Eat less calories than you burn? You'll lose weight. It's that simple! The problem is that no one wants to track what they eat on pen and paper or their notes app. We need an all in one place for tracking food...
 
 ### The Solution
-...Introducing myFoodDiary! This react.js based web app brings all your tracking needs! myFoodDiary lets a user to add food to their meals in their diary. They also may add their goals and macros so they can hit those goals and track along with it. If a user doesn't know where to start they can also use the included TDEE calculator to find an estimated caloric intake and a recommended macro breakdown!
+...Introducing myFoodJournal! This react.js based web app brings all your tracking needs! myFoodDiary lets a user to add food to their meals in their diary. They also may add their goals and macros so they can hit those goals and track along with it. If a user doesn't know where to start they can also use the included TDEE calculator to find an estimated caloric intake and a recommended macro breakdown!
 
 ### installation
 if you want to experiment with this app or run it locally fork and clone this repo.
@@ -16,8 +16,8 @@ if you want to experiment with this app or run it locally fork and clone this re
 4. And you should be all set!
 
 
-### Project Explained
-Explain how project works
+### Brief Project Explained
+This project uses react.js to create the front end. I created a NavBar component that always renders and depending on what route is clicked or typed in, I would render the corresponding components into the DOM. The front-end handles fetch calls to the back-end to pull all the users data (journal entries, goals, etc..) and displays it depending on the current link the user has clicked on (utilizing react-router). This project is a Single Page Application made for the Final Project of the FlatIron School Software Engineering Course. The backend is an API created on ruby on rails. If you would like to learn more about that, check out the backend repo linked at the top of the README.
 
 You can also gain more of my insight and the process of this project on my [Medium Blog!](https://emrichmp.medium.com/)
 
