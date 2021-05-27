@@ -85,6 +85,9 @@ class Tdee extends React.Component {
                 <div className="result">
                         Calories: {window.tdee} Protein: {window.tdee_protein} Fats: {window.tdee_fats} Carbs: {window.tdee_carbs}
                 </div>
+                <div className="disclaimer">
+                    ** DISCLAIMER: These results are loosely based off the research of Jeff Nippard and the bmr algorithm from the <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee"> Harris-Benedict Equation </a>, you may need to consume slightly more or less calories based on activity level **
+                </div>
             </div>
         )
     }
