@@ -1,6 +1,6 @@
 # To-do
 [] - Stretch Goal: to make app mobile friendly
-[] - fix readme
+[X] - fix readme
 [X] - start front end
 [X] - Change port
 [X] - finish Nav bar
