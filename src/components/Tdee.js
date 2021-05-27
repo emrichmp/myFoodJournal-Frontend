@@ -23,13 +23,13 @@ class Tdee extends React.Component {
     let nam = event.target.name;
     let val = event.target.value;
     this.setState({[nam]: val});
-    let thingy = this.state.age
-    console.log(typeof thingy)
-    if (typeof thingy === "number"){
-        console.log("number")
-    } else { 
-        console.log("not")
-    }
+    // let thingy = this.state.age
+    // console.log(typeof thingy)
+    // if (typeof thingy === "number"){
+    //     console.log("number")
+    // } else { 
+    //     console.log("not")
+    // }
     }
 
     calorieCalculator(weight, height, age, sex, goal) {
