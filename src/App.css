@@ -22,6 +22,7 @@ body {
 .tdee-form {
   color: white;
   padding: 0.5rem 7rem;
+  text-shadow: 2px 2px black;
 }
 
 .tdee-inputs{
@@ -71,6 +72,7 @@ input[type=submit]:hover {
   color: white;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px black;
 }
 
 .result {
@@ -80,6 +82,7 @@ input[type=submit]:hover {
   color: white;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px black;
 }
 
 .disclaimer {
