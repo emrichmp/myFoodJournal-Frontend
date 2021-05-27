@@ -7,6 +7,7 @@
 [X] - look at layout
 [X] - Get all components linked and loaded
 [] - use onChange and state to make input only number for age form
+[] - Change tdee to use state
 
 
 [] Login/sign up page
