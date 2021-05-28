@@ -30,9 +30,11 @@ class Mygoals extends React.Component {
         return(
             <div>
                 <h1 className="Header"> myGoals! </h1>
-                <h2>Weight Goal: {this.state.goalWeight} </h2>
-                <h2>Calorie Goal: {this.state.calories} </h2>
-                <h2>Macro Goal: {this.state.macros} </h2>
+                <div className="goal-data">
+                    <h2>Weight Goal: {this.state.goalWeight} </h2>
+                    <h2>Calorie Goal: {this.state.calories} </h2>
+                    <h2>Macro Goal: {this.state.macros} </h2>
+                </div>
             </div>
         )
     }
