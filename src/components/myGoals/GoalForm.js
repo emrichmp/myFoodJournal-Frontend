@@ -1,10 +1,17 @@
 import React from 'react';
 
 class GoalForm extends React.Component {
+
+    submitHandler = (event) => {
+        event.preventDefault()
+        //console.log("submit handler goal form")
+        
+    }
+
     render() {
         return(
             <div>
-                <form className="goal-form">
+                <form onSubmit= {this.submitHandler} className="goal-form">
                     <label>Weight Goal</label>
                     <input className="goal-input" type="text" name="goalweight" placeholder="kg"/>
                     <label>Calorie Goal</label>
