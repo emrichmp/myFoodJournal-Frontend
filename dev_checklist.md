@@ -12,9 +12,9 @@
 [X] - css styling for myGoals
 [X] - add edit button for myGoals
 [X] - Load edit form on click of button
-[] - have edit form fetch to api to edit the goal
-[] - have components update with new goal data
 [X] - style myGoal form
+[] - patch to api on submit
+[] - have components update with new goal data (ig by changing state)
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
