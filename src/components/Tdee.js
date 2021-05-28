@@ -20,16 +20,15 @@ class Tdee extends React.Component {
     }
 
     changeHandler = (event) => {
-    let nam = event.target.name;
-    let val = event.target.value;
-    this.setState({[nam]: val});
-    // let thingy = this.state.age
-    // console.log(typeof thingy)
-    // if (typeof thingy === "number"){
-    //     console.log("number")
-    // } else { 
-    //     console.log("not")
-    // }
+        let nam = event.target.name;
+        let val = event.target.value;
+        this.setState({[nam]: val});
+        //console.log(typeof parseInt(this.state.age))
+        // if (typeof parseInt(this.state.age) === "number"){
+        //     console.log("number")
+        // } else { 
+        //     console.log("NaN")
+        // }
     }
 
     calorieCalculator(weight, height, age, sex, goal) {
