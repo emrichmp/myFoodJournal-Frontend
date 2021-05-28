@@ -26,6 +26,10 @@ class Mygoals extends React.Component {
         )
     }
 
+    handleClick = (event) => {
+        console.log("hey")
+    }
+
     render () {
         return(
             <div>
@@ -34,7 +38,7 @@ class Mygoals extends React.Component {
                     <h2>Weight Goal: {this.state.goalWeight} </h2>
                     <h2>Calorie Goal: {this.state.calories} </h2>
                     <h2>Macro Goal: {this.state.macros} </h2>
-                    <button className="goal-edit-button">Edit Goals</button>
+                    <button className="goal-edit-button" onClick={this.handleClick}>Edit Goals</button>
                 </div>
             </div>
         )
