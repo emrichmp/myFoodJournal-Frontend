@@ -94,3 +94,9 @@ input[type=submit]:hover {
   align-items: center;
   font-size: xx-small;
 }
+
+.goal-data {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
