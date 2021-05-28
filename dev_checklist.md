@@ -9,7 +9,7 @@
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
-[] - Stretch Goal: to make app mobile friendly
+[] - to make app mobile friendly
 
 # Sections
 [] Login/sign up page
