@@ -8,13 +8,13 @@ class GoalForm extends React.Component {
                     <label>Weight Goal</label>
                     <input className="goal-input" type="text" name="goalweight" placeholder="kg"/>
                     <label>Calorie Goal</label>
-                    <input className="goal-input" type="text" name="goalcalories" placeholder="cals"/>
+                    <input className="goal-input" type="text" name="goalcalories" placeholder="grams"/>
                     <label>Protein Goal</label>
-                    <input className="goal-input" type="text" name="goalprotein" placeholder="cals"/>
+                    <input className="goal-input" type="text" name="goalprotein" placeholder="grams"/>
                     <label>Fat Goal</label>
-                    <input className="goal-input" type="text" name="goalfats" placeholder="cals"/>
+                    <input className="goal-input" type="text" name="goalfats" placeholder="grams"/>
                     <label>Carb Goal</label>
-                    <input className="goal-input" type="text" name="goalcarbs" placeholder="cals"/>
+                    <input className="goal-input" type="text" name="goalcarbs" placeholder="grams"/>
                 </form>
             </div>
         )
