@@ -7,6 +7,7 @@ class Mygoals extends React.Component {
         goalWeight: "",
         calories: "",
         macros: "",
+        form: ""
     }
 
     componentDidMount() {
@@ -28,7 +29,10 @@ class Mygoals extends React.Component {
     }
 
     handleClick = (event) => {
-        console.log("hey")
+        console.log("yo")
+        this.setState({
+            form: <GoalForm />
+        })
     }
 
     render () {
@@ -41,6 +45,7 @@ class Mygoals extends React.Component {
                     <h2>Macro Goal: {this.state.macros} </h2>
                     <button className="goal-edit-button" onClick={this.handleClick}>Edit Goals</button>
                 </div>
+                <div>{this.state.form}</div>
             </div>
         )
     }
