@@ -6,7 +6,7 @@
 [X] - finish Nav bar
 [X] - look at layout
 [X] - Get all components linked and loaded
-[] - use onChange and state to make input only number for age form
+[] - use onChange and state to make input only number for age, weighta and height inputs on form form
 [X] - Change tdee to use state
 
 
