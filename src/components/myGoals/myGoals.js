@@ -29,9 +29,8 @@ class Mygoals extends React.Component {
     }
 
     handleClick = (event) => {
-        console.log("yo")
         this.setState({
-            form: <GoalForm />
+            form: < GoalForm />
         })
     }
 
