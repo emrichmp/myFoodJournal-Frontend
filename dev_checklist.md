@@ -6,7 +6,7 @@
 [X] - look at layout
 [X] - Get all components linked and loaded
 [X] - Change tdee to use state
-[] - Fetch call for myGoals page
+[X] - Fetch call for myGoals page
 [] - Format data on page
 
 # Stretch Goals:
