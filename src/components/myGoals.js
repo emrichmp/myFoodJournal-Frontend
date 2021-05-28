@@ -3,11 +3,13 @@ import React from 'react';
 class Mygoals extends React.Component {
 
     componentDidMount() {
-        fetch("http://localhost:3000/api/v1/goals")
+        //let user_id = 1
+
+        fetch("http://localhost:3000/api/v1/users")
         .then(response => response.json())
         .then(
             (result) => {
-                console.log(result)
+                console.log(result.data)
             }
         )
     }
