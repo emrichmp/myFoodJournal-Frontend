@@ -18,8 +18,8 @@ class Mygoals extends React.Component {
             (result) => {
                 let data = result.data.attributes.goal
                 this.setState({
-                    goalWeight: data.goalweight,
-                    calories: data.calories,
+                    goalWeight: `${data.goalweight} kg`,
+                    calories: `${data.calories} calories`,
                     macros: `${data.protein} protein, ${data.carbs} carbs and ${data.fats} fat`
                 })
             }
