@@ -7,8 +7,8 @@
 [X] - Get all components linked and loaded
 [X] - Change tdee to use state
 [X] - Fetch call for myGoals page
-[] - Format fetch call to pull the correct data
-[] - Format data on page
+[X] - Format fetch call to pull the correct data
+[X] - Format data on page
 [] - styling
 
 # Stretch Goals:
