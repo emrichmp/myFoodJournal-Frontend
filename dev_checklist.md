@@ -31,7 +31,7 @@
         - under shoes calories consumed vs calories goal and the deficit
     - pulls all journal instances that belongs to that user
 
-[] TDEE calc
+[X] TDEE calc
     - Form for inputs...
         [X] - weight
         [X] - age
