@@ -6,6 +6,8 @@
 [X] - look at layout
 [X] - Get all components linked and loaded
 [X] - Change tdee to use state
+[] - Fetch call for myGoals page
+[] - Format data on page
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
