@@ -11,7 +11,7 @@
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
 [] - Stretch Goal: to make app mobile friendly
 
-
+# Sections
 [] Login/sign up page
     - form for login
     - link to sign up page
