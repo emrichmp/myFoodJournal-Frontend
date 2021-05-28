@@ -1,13 +1,17 @@
 # To-do
-[] - Stretch Goal: to make app mobile friendly
 [X] - fix readme
 [X] - start front end
 [X] - Change port
 [X] - finish Nav bar
 [X] - look at layout
 [X] - Get all components linked and loaded
-[] - use onChange and state to make input only number for age, weighta and height inputs on form form
 [X] - Change tdee to use state
+
+Stretch Goals:
+[] - use onChange and state to make input only number for age, weighta and height inputs on form form
+[] - Stretch Goal: to make app mobile friendly
+
+
 
 
 [] Login/sign up page
