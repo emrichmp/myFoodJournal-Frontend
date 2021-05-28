@@ -4,7 +4,7 @@ class GoalForm extends React.Component {
     render() {
         return(
             <div>
-                <form>
+                <form className="goal-form">
                     <label>Weight Goal</label>
                     <input className="goal-input" type="text" name="goalweight" placeholder="kg"/>
                     <label>Calorie Goal</label>
@@ -15,6 +15,7 @@ class GoalForm extends React.Component {
                     <input className="goal-input" type="text" name="goalfats" placeholder="grams"/>
                     <label>Carb Goal</label>
                     <input className="goal-input" type="text" name="goalcarbs" placeholder="grams"/>
+                    <input type="submit" value="update goals!" />
                 </form>
             </div>
         )
