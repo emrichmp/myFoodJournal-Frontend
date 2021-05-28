@@ -9,7 +9,7 @@
 [X] - Fetch call for myGoals page
 [X] - Format fetch call to pull the correct data
 [X] - Format data on page
-[] - css styling for myGoals
+[X] - css styling for myGoals
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
