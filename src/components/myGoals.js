@@ -2,14 +2,26 @@ import React from 'react';
 
 class Mygoals extends React.Component {
 
-    componentDidMount() {
-        //let user_id = 1
+    state = {
+        goalWeight: "",
+        calories: "",
+        macros: "",
+    }
 
-        fetch("http://localhost:3000/api/v1/users")
+    componentDidMount() {
+        //HAVE TO CHANGE THIS SO IT IS THE ACTUAL USER ID
+        let user_id = 1
+
+        fetch(`http://localhost:3000/api/v1/users/${user_id}`)
         .then(response => response.json())
         .then(
             (result) => {
-                console.log(result.data)
+                let data = result.data.attributes.goal
+                this.setState({
+                    goalWeight: data.goalweight,
+                    calories: data.calories,
+                    macros: `${data.protein} protein, ${data.carbs} carbs and ${data.fats} fat`
+                })
             }
         )
     }
@@ -18,6 +30,9 @@ class Mygoals extends React.Component {
         return(
             <div>
                 <h1 className="Header"> myGoals! </h1>
+                <h2>Weight Goal: {this.state.goalWeight} </h2>
+                <h2>Calorie Goal: {this.state.calories} </h2>
+                <h2>Macro Goal: {this.state.macros} </h2>
             </div>
         )
     }
