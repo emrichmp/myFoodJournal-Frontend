@@ -1,4 +1,5 @@
 import React from 'react';
+import GoalForm from './GoalForm'
 
 class Mygoals extends React.Component {
 
@@ -45,4 +46,4 @@ class Mygoals extends React.Component {
     }
 }
 
-export default Mygoals
+export default Mygoals;
