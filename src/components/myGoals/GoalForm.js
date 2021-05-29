@@ -8,8 +8,10 @@ class GoalForm extends React.Component {
     }
 
     // patchHandler() {
+    //     //HAVE TO CHANGE THIS SO IT IS THE ACTUAL Goal ID
+    //     let goal_id = 1
     //     console.log("patch handler goal form")
-    //     fetch("", {
+    //     fetch(`http://localhost:3000/api/v1/goals/${goal_id}`, {
     //         method: 'PUT',
     //         body: JSON.stringify({
     //         //what needs to be changed
