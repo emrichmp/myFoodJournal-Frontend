@@ -4,8 +4,11 @@ class GoalForm extends React.Component {
 
     submitHandler = (event) => {
         event.preventDefault()
-        //console.log("submit handler goal form")
-        
+        this.patchHandler()
+    }
+
+    patchHandler() {
+        console.log("patch handler goal form")
     }
 
     render() {
