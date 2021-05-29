@@ -14,7 +14,13 @@
 [X] - Load edit form on click of button
 [X] - style myGoal form
 [] - patch to api on submit
+    - needs to pull data from form
+    - then assigns it in patch
 [] - have components update with new goal data (ig by changing state)
+    - passed state to parent comp - myGoals
+
+# NEED
+- need to make sure user_id and goal_id is the one for the actual user, not 1
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
