@@ -7,9 +7,20 @@ class GoalForm extends React.Component {
         this.patchHandler()
     }
 
-    patchHandler() {
-        console.log("patch handler goal form")
-    }
+    // patchHandler() {
+    //     console.log("patch handler goal form")
+    //     fetch("", {
+    //         method: 'PUT',
+    //         body: JSON.stringify({
+    //         //what needs to be changed
+    //     }),
+    //     headers: {
+    //     "Content-type": "application/json; charset=UTF-8"
+    //     }
+    //     })
+    //     .then(response => response.json())
+    //     .then(json => console.log(json))
+    // }
 
     render() {
         return(
