@@ -7,22 +7,23 @@ class GoalForm extends React.Component {
         this.patchHandler()
     }
 
-    // patchHandler() {
-    //     //HAVE TO CHANGE THIS SO IT IS THE ACTUAL Goal ID
-    //     let goal_id = 1
-    //     console.log("patch handler goal form")
-    //     fetch(`http://localhost:3000/api/v1/goals/${goal_id}`, {
-    //         method: 'PUT',
-    //         body: JSON.stringify({
-    //         //what needs to be changed
-    //     }),
-    //     headers: {
-    //     "Content-type": "application/json; charset=UTF-8"
-    //     }
-    //     })
-    //     .then(response => response.json())
-    //     .then(json => console.log(json))
-    // }
+    patchHandler() {
+        console.log("in patchHandler")
+        // //HAVE TO CHANGE THIS SO IT IS THE ACTUAL Goal ID
+        // let goal_id = 1
+        // console.log("patch handler goal form")
+        // fetch(`http://localhost:3000/api/v1/goals/${goal_id}`, {
+        //     method: 'PUT',
+        //     body: JSON.stringify({
+        //     //what needs to be changed
+        // }),
+        // headers: {
+        // "Content-type": "application/json; charset=UTF-8"
+        // }
+        // })
+        // .then(response => response.json())
+        // .then(json => console.log(json))
+    }
 
     render() {
         return(
