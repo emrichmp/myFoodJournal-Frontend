@@ -38,10 +38,11 @@ class myHistory extends React.Component {
                     {this.state.journalData.map((item, index) => {
                         return(
                             <li key={index}>
-                                diary date: {item.date} calories consumed:{item.calories_consumed} deficit: {item.calories_consumed - this.state.goalCalories}
+                                Diary Date: {item.date} Caloric Intake:{item.calories_consumed} Remainder: {item.calories_consumed - this.state.goalCalories}
                             </li>
                         )
                     })}
+                    <div className="disclaimer">remainder = calories over/under goal</div>
                 </ul>
             </div>
         )
