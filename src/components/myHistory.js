@@ -12,6 +12,8 @@ class myHistory extends React.Component {
             (result) => {
                 let goalcalories = result.data.attributes.goal.calories
                 console.log(goalcalories)
+                let journals = result.data.attributes.journals
+                console.log(journals)
             }
         )
     }
