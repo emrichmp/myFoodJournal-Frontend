@@ -1,6 +1,20 @@
 import React from 'react';
 
 class myHistory extends React.Component {
+
+    componentDidMount() {
+        //HAVE TO CHANGE THIS SO IT IS THE ACTUAL USER ID
+        let user_id = 1
+
+        fetch(`http://localhost:3000/api/v1/users/${user_id}`)
+        .then(response => response.json())
+        .then(
+            (result) => {
+                let goalcalories = result.data.attributes.goal.calories
+                console.log(goalcalories)
+            }
+        )
+    }
     render () {
         return(
             <div>
