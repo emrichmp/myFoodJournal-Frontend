@@ -2,7 +2,7 @@ import React from 'react';
 
 class myHistory extends React.Component {
 
-    state = {goalCalories: ""}
+    state = {goalCalories: "", journalData: ""}
 
     componentDidMount() {
         //HAVE TO CHANGE THIS SO IT IS THE ACTUAL USER ID
@@ -23,17 +23,27 @@ class myHistory extends React.Component {
         let journal_data = journals.map((journal) => {
             return {date: journal.date, calories_consumed: journal.calories_consumed}
         })
-        console.log(journal_data)
         this.setState({
             goalCalories: calories,
+            journalData: journal_data
         })
+        console.log(this.state.journalData)
     }
 
     render () {
         return(
             <div>
                 <h1 className="Header"> myHistory! </h1>
-                <h2 className="tdee-form">Calorie Goal: {this.state.goalCalories} calories</h2>
+                <h2 className="tdee-form">Calorie Goal: {this.state.goalCalories} Calories</h2>
+                <ul className="journal-data-list">
+                    {/* {this.state.journalData.forEach((item, index) => {
+                        return(
+                            <li key={index}>
+                                {item.date} {item.calories_consumed}
+                            </li>
+                        )
+                    })} */}
+                </ul>
             </div>
         )
     }
