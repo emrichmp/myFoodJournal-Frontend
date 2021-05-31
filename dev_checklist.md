@@ -22,6 +22,7 @@
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
+    - in myGoals and GoalForm
 
 # Stretch Goals:
 [] - use onChange and state to make input only number for age, weighta and height inputs on form form
