@@ -19,7 +19,7 @@
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
 [X] - Start myhistory by making fetch call
-[] - iterate over each journal instance to grab calories consumed and date
+[X] - iterate over each journal instance to grab calories consumed and date
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
