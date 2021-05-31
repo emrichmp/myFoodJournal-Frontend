@@ -57,7 +57,7 @@ class GoalForm extends React.Component {
                     <label>Weight Goal</label>
                     <input className="goal-input" type="text" name="goalweight" placeholder="kg" onChange={this.changeHandler}/>
                     <label>Calorie Goal</label>
-                    <input className="goal-input" type="text" name="goalcalories" placeholder="grams" onChange={this.changeHandler}/>
+                    <input className="goal-input" type="text" name="goalcalories" placeholder="cals" onChange={this.changeHandler}/>
                     <label>Protein Goal</label>
                     <input className="goal-input" type="text" name="goalprotein" placeholder="grams" onChange={this.changeHandler}/>
                     <label>Fat Goal</label>
