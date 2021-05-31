@@ -16,7 +16,7 @@
 [] - patch to api on submit
     - needs to pull data from form
     - then assigns it in patch
-[] - have components update with new goal data (ig by changing state)
+[] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
 
 # NEED
