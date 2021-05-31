@@ -45,10 +45,10 @@
     - Section for Calorie and Macro goals
     - Edit button -> renders form to change it
 
-[] myHistory
-    - Shows date
+[X] myHistory
+    [X] - Shows date
         - under shoes calories consumed vs calories goal and the deficit
-    - pulls all journal instances that belongs to that user
+    [X] - pulls all journal instances that belongs to that user
 
 [X] TDEE calc
     - Form for inputs...
