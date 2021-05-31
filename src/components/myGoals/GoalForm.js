@@ -46,7 +46,7 @@ class GoalForm extends React.Component {
         "Content-type": "application/json; charset=UTF-8"
         }
         })
-        .then(response => response.json())
+        .then(response => response.text())
         .then(json => console.log(json))
     }
 
