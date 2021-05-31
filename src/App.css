@@ -140,3 +140,7 @@ input[type=submit]:hover {
 .goal-inputs:focus {
   border: 1px solid #555;
 }
+.journal-data-list {
+  text-align: center;
+  color: white;
+}
