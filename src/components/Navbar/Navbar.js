@@ -3,8 +3,6 @@ import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
 
-//<a href="/"></a>
-
 class Navbar extends React.Component {
     render() {
         return (
