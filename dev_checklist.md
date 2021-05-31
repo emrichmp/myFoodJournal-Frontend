@@ -13,7 +13,7 @@
 [X] - add edit button for myGoals
 [X] - Load edit form on click of button
 [X] - style myGoal form
-[] - patch to api on submit
+[X] - patch to api on submit
     - needs to pull data from form
     - then assigns it in patch
 [] - have components update with new goal data (ig by changing state - USE REDUX)
