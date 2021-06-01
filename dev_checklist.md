@@ -29,6 +29,7 @@
 # Stretch Goals:
 [] - Form validations using onChange
 [] - have form render in and out
+[] - error messages for mis input
 
 # Sections
 [] Login/sign up page
