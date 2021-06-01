@@ -5,9 +5,9 @@ import App from './App';
 import Login from './components/Login/Loginpage'
 import reportWebVitals from './reportWebVitals';
 
-const loggedIn = 1
+window.loggedIn = 1
 
-if (loggedIn === 1) {
+if (window.loggedIn === 1) {
   ReactDOM.render(
     <React.StrictMode> <App /> </React.StrictMode>,
     document.getElementById('root'));

@@ -5,6 +5,7 @@ class SignUpForm extends React.Component {
     submitHandler = (event) => {
         event.preventDefault()
         console.log("signup button")
+        ///window.loggedIn = 1
     }
 
     changeHandler = (event) => {

@@ -5,6 +5,8 @@ class LoginForm extends React.Component {
     submitHandler = (event) => {
         event.preventDefault()
         console.log("login button")
+        //return window.loggedIn = 1
+        //console.log(window.loggedIn)
     }
 
     changeHandler = (event) => {
