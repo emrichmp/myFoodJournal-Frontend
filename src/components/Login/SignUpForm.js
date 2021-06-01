@@ -10,14 +10,19 @@ class SignUpForm extends React.Component {
 
     submitHandler = (event) => {
         event.preventDefault()
-        console.log("signup button")
         if (this.state.password === this.state.confirm){
-            console.log("matched")
+            let email = this.state.email
+            let password = this.state.password
+            this.postHandler(email, password)
         } else {
             this.setState({
                 error: "Passwords do not match!"
             })
         }
+    }
+
+    postHandler(email, password) {
+        console.log(email, password)
     }
 
     changeHandler = (event) => {
