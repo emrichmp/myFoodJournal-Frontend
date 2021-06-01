@@ -42,8 +42,8 @@
     - add form under each meal after foods to add a food
 
 [] myGoals page 
-    - Section for Calorie and Macro goals
-    - Edit button -> renders form to change it
+    [X] - Section for Calorie and Macro goals
+    [X] - Edit button -> renders form to change it
 
 [X] myHistory
     [X] - Shows date
