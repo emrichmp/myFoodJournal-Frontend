@@ -22,6 +22,9 @@ This project uses react.js to create the front end. I created a NavBar component
 You can also gain more of my insight and the process of this project on my [Medium Blog!](https://emrichmp.medium.com/)
 
 ### Project Planning
+#### Planning Images for Project Layout
+![Plan page](https://i.ibb.co/D44P60R/IMG-8072.jpg)
+
 #### I used this initial checklist to break up and plan aspects of the project:
 
 [X] Login/sign up page
