@@ -1,6 +1,18 @@
 import React from 'react';
 
 class SignUpForm extends React.Component {
+
+    submitHandler = (event) => {
+        event.preventDefault()
+        console.log("signup button")
+    }
+
+    changeHandler = (event) => {
+        let nam = event.target.name;
+        let val = event.target.value;
+        this.setState({[nam]: val});
+    }
+
     render () {
         return (
           <div className="signup">
