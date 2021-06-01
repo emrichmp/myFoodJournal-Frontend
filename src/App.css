@@ -148,14 +148,16 @@ select {
 .login {
   color: white;
   padding: 0.5rem 7rem;
-  text-align: left;
+  text-align: center;
 }
 .login-input {
+  width: 100%;
   color: white;
   padding: 0.5rem 7rem;
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid black;
+  text-align: center;
 }
 
 .login-button {
@@ -179,14 +181,16 @@ select {
 .signup {
   color: white;
   padding: 0.5rem 7rem;
-  text-align: left;
+  text-align: center;
 }
 .signup-input {
+  width: 100%;
   color: white;
   padding: 0.5rem 7rem;
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid black;
+  text-align: center;
 }
 
 .signup-button {

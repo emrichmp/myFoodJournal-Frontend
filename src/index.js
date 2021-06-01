@@ -5,7 +5,7 @@ import App from './App';
 import Login from './components/Login/Loginpage'
 import reportWebVitals from './reportWebVitals';
 
-const loggedIn = 1
+const loggedIn = 0
 
 if (loggedIn === 1) {
   ReactDOM.render(
