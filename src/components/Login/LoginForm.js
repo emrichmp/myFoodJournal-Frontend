@@ -16,16 +16,16 @@ class LoginForm extends React.Component {
       return (
         <div className="login">
             <h1 className="Header">Login!</h1>
-            <form onSubmit= {this.submitHandler} className="">
+            <form onSubmit= {this.submitHandler} className="login">
                 <label>
                     Email:
-                    <input className="" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
+                    <input className="login-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
                 </label>
                 <label>
                     Password:
-                    <input className="" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
+                    <input className="login-input" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
                 </label>
-                <input type="submit" value="Login" />
+                <input className="login-button" type="submit" value="Login" />
             </form>
         </div>
       );
