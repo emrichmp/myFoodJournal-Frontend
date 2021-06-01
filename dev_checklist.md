@@ -20,6 +20,11 @@
     - passed state to parent comp - myGoals
 [X] - Start myhistory by making fetch call
 [X] - iterate over each journal instance to grab calories consumed and date
+[] - Set up back end for logging in and signing up
+[] - have login find user and grab user_id
+[] - have signup check if user exists and create new user
+    - POST req on submit
+[] - After user signs up or logs in, have it switch login to App component
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
