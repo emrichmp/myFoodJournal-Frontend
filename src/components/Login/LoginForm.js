@@ -16,7 +16,7 @@ class LoginForm extends React.Component {
       return (
         <div className="login">
             <h1 className="Header">Login!</h1>
-            <form onSubmit= {this.submitHandler} className="tdee-form">
+            <form onSubmit= {this.submitHandler} className="">
                 <label>
                     Email:
                     <input className="" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
