@@ -28,6 +28,8 @@ class SignUpForm extends React.Component {
             method: 'POST',
             headers: {"Content-Type": "application/json; charset=UTF-8"},
             body: JSON.stringify({
+                    goal: null,
+                    journals: [],
                     email: email,
                     password: password,
                     weight: weight
