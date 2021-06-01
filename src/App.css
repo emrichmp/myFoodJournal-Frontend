@@ -174,3 +174,34 @@ select {
 .login-button:hover {
   background-color: rgb(135, 206, 150);
 }
+
+.signup {
+  color: white;
+  padding: 0.5rem 7rem;
+  text-align: left;
+}
+.signup-input {
+  color: white;
+  padding: 0.5rem 7rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.signup-button {
+  background-color: #4CAF50;
+  width: 50%;
+  color: white;
+  font-size: medium;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.signup-button:hover {
+  background-color: rgb(135, 206, 150);
+}

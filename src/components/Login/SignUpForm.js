@@ -3,22 +3,22 @@ import React from 'react';
 class SignUpForm extends React.Component {
     render () {
         return (
-          <div className="sign-up">
+          <div className="signup">
               <h1 className="Header">Sign Up!</h1>
-              <form onSubmit= {this.submitHandler} className="">
+              <form onSubmit= {this.submitHandler} className="signup">
                   <label>
                       Email:
-                      <input className="" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
+                      <input className="signup-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
                   </label>
                   <label>
                       Password:
-                      <input className="" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
+                      <input className="signup-input" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
                   </label>
                   <label>
                       Confirm Password:
-                      <input className="" type="password" name="confirm" placeholder="password" onChange={this.changeHandler} />
+                      <input className="signup-input" type="password" name="confirm" placeholder="confirm password" onChange={this.changeHandler} />
                   </label>
-                  <input type="submit" value="Login" />
+                  <input className="signup-button" type="submit" value="Sign up!" />
               </form>
           </div>
         );
