@@ -1,9 +1,4 @@
 export const MenuItems = [
-    // {
-    //     title: 'myFoodJournal',
-    //     url: '#',
-    //     cName: 'nav-links'
-    // },
     {
         title: 'myDiary',
         url: '/myDiary',
