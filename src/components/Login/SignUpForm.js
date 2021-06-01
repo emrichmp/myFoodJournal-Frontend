@@ -24,17 +24,14 @@ class SignUpForm extends React.Component {
 
     postHandler(email, password, weight) {
         //console.log(email, password)
-        fetch(`http://localhost:3000/api/v1/users`, {
+        fetch("http://localhost:3000/api/v1/users", {
             method: 'POST',
+            headers: {"Content-Type": "application/json; charset=UTF-8"},
             body: JSON.stringify({
                     email: email,
                     password: password,
                     weight: weight
-            }),
-            
-        headers: {
-        "Content-type": "application/json; charset=UTF-8"
-        }
+            })
         })
     }
 
