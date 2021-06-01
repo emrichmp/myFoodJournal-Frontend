@@ -46,7 +46,7 @@ select {
   background-color: #f1f1f1;
 }
 
-input[type=submit] {
+.tdee-button {
   background-color: #4CAF50;
   width: 100%;
   border: none;
@@ -61,7 +61,7 @@ input[type=submit] {
   margin: 10px 0;
 }
 
-input[type=submit]:hover {
+.tdee-button:hover {
   background-color: rgb(135, 206, 150);
 }
 

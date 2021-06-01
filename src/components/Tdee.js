@@ -83,7 +83,7 @@ class Tdee extends React.Component {
                             <option value="maintain">Maintain weight</option>
                         </select>
                     </label>
-                    <input type="submit" value="Calculate Macros!" />
+                    <input className="tdee-button" type="submit" value="Calculate Macros!" />
                 </form>
                 <div className="result-text">
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
