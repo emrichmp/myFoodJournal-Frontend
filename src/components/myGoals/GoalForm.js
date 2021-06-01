@@ -27,11 +27,9 @@ class GoalForm extends React.Component {
     }
 
     patchHandler(goalweight, goalcalories, goalprotein, goalfats, goalcarbs) {
-        console.log("in patchHandler")
-        //console.log(goalweight, goalcalories, goalprotein, goalfats, goalcarbs)
         //HAVE TO CHANGE THIS SO IT IS THE ACTUAL Goal ID
         let goal_id = 1
-        console.log("patch handler goal form")
+
         fetch(`http://localhost:3000/api/v1/goals/${goal_id}`, {
             method: 'PATCH',
             body: JSON.stringify({
@@ -40,14 +38,11 @@ class GoalForm extends React.Component {
                 fats: goalfats,
                 carbs: goalcarbs,
                 goalweight: goalweight,
-            //what needs to be changed
         }),
         headers: {
         "Content-type": "application/json; charset=UTF-8"
         }
         })
-        .then(response => response.text())
-        .then(json => console.log(json))
     }
 
     render() {
