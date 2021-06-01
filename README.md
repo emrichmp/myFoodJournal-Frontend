@@ -29,26 +29,26 @@ You can also gain more of my insight and the process of this project on my [Medi
 
 #### I used this initial checklist to break up and plan aspects of the project:
 
-[X] Login/sign up page
+##### [X] Login/sign up page
     [X] - form for login
     [X] - link to sign up page
     [X] - form for sign in
 
-[X] myDiary page
+##### [X] myDiary page
     [X] - List meals
     [X] - List foods under meals
     [X] - add form under each meal after foods to add a food
 
-[X] myGoals page 
+##### [X] myGoals page 
     [X] - Section for Calorie and Macro goals
     [X] - Edit button -> renders form to change it
 
-[X] myHistory
+##### [X] myHistory
     [X] - Shows date
     [X] - under shoes calories consumed vs calories goal and the deficit
     [X] - pulls all journal instances that belongs to that user
 
-[X] TDEE calc
+##### [X] TDEE calc
     [X] - Form for inputs...
         [X] - weight
         [X] - age
