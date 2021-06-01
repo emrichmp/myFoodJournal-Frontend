@@ -59,7 +59,7 @@ class GoalForm extends React.Component {
                     <input className="goal-input" type="text" name="goalfats" placeholder="grams" onChange={this.changeHandler}/>
                     <label>Carb Goal</label>
                     <input className="goal-input" type="text" name="goalcarbs" placeholder="grams" onChange={this.changeHandler} />
-                    <input type="submit" value="update goals!" />
+                    <input className="tdee-button" type="submit" value="update goals!" />
                 </form>
             </div>
         )
