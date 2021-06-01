@@ -13,7 +13,8 @@ class SignUpForm extends React.Component {
         if (this.state.password === this.state.confirm){
             let email = this.state.email
             let password = this.state.password
-            this.postHandler(email, password)
+            let weight = this.state.weight
+            this.postHandler(email, password, weight)
         } else {
             this.setState({
                 error: "Passwords do not match!"
@@ -21,13 +22,14 @@ class SignUpForm extends React.Component {
         }
     }
 
-    postHandler(email, password) {
-        console.log(email, password)
+    postHandler(email, password, weight) {
+        //console.log(email, password)
         fetch(`http://localhost:3000/api/v1/users`, {
             method: 'POST',
             body: JSON.stringify({
                 email: email,
                 password: password,
+                weight: weight
         }),
         headers: {
         "Content-type": "application/json; charset=UTF-8"
@@ -58,6 +60,10 @@ class SignUpForm extends React.Component {
                   <label>
                       Confirm Password:
                       <input className="signup-input" type="password" name="confirm" placeholder="confirm password" onChange={this.changeHandler} />
+                  </label>
+                  <label>
+                      Current Weight:
+                      <input className="signup-input" type="text" name="weight" placeholder="kg" onChange={this.changeHandler} />
                   </label>
                   <input className="signup-button" type="submit" value="Sign up!" />
               </form>
