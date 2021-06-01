@@ -6,7 +6,7 @@ Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
 I believe that the most effective way to reach a fitness related goal is by tracking daily! No matter if your goal is to lose, gain or maintain your weight you need to know how much you're eating. It's all about calories in vs calories out! Eat more calories than you burn? You'll gain weight. Eat less calories than you burn? You'll lose weight. It's that simple! The problem is that no one wants to track what they eat on pen and paper or their notes app. We need an all in one place for tracking food...
 
 ### The Solution
-...Introducing myFoodJournal! This react.js based web app brings all your tracking needs! myFoodDiary lets a user to add food to their meals in their diary. They also may add their goals and macros so they can hit those goals and track along with it. If a user doesn't know where to start they can also use the included TDEE calculator to find an estimated caloric intake and a recommended macro breakdown!
+...Introducing myFoodJournal! This react.js based web app brings all your tracking needs! myFoodJournal lets a user to add food to their meals in their diary. They also may add their goals and macros so they can hit those goals and track along with it. If a user doesn't know where to start they can also use the included TDEE calculator to find an estimated caloric intake and a recommended macro breakdown!
 
 ### installation
 if you want to experiment with this app or run it locally fork and clone this repo.
