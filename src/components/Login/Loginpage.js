@@ -5,7 +5,7 @@ import SignUpForm from './SignUpForm'
 class Loginpage extends React.Component {
   render () {
     return (
-      <div className="Login">
+      <div>
           <LoginForm />
           <SignUpForm />
       </div>
