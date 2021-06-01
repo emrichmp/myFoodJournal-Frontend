@@ -19,11 +19,11 @@ class LoginForm extends React.Component {
             <form onSubmit= {this.submitHandler} className="tdee-form">
                 <label>
                     Email:
-                    <input className="tdee-inputs" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
+                    <input className="" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
                 </label>
                 <label>
                     Password:
-                    <input className="tdee-inputs" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
+                    <input className="" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
                 </label>
                 <input type="submit" value="Login" />
             </form>
