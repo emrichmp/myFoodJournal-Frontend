@@ -1,11 +1,23 @@
 import React from 'react';
 
 class SignUpForm extends React.Component {
+    state = {
+        email: "",
+        password: "",
+        confirm: "",
+        error: ""
+    }
 
     submitHandler = (event) => {
         event.preventDefault()
         console.log("signup button")
-        ///window.loggedIn = 1
+        if (this.state.password === this.state.confirm){
+            console.log("matched")
+        } else {
+            this.setState({
+                error: "Passwords do not match!"
+            })
+        }
     }
 
     changeHandler = (event) => {
@@ -23,6 +35,7 @@ class SignUpForm extends React.Component {
                       Email:
                       <input className="signup-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
                   </label>
+                    <h2 className="error">{this.state.error}</h2>
                   <label>
                       Password:
                       <input className="signup-input" type="password" name="password" placeholder="password" onChange={this.changeHandler} />
