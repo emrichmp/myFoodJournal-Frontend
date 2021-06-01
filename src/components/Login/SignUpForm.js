@@ -33,6 +33,8 @@ class SignUpForm extends React.Component {
                     weight: weight
             })
         })
+        .then(response => response.json())
+        .then(json => console.log(json))
     }
 
     changeHandler = (event) => {
