@@ -21,6 +21,39 @@ This project uses react.js to create the front end. I created a NavBar component
 
 You can also gain more of my insight and the process of this project on my [Medium Blog!](https://emrichmp.medium.com/)
 
+### Project Planning
+#### I used this initial checklist to break up and plan aspects of the project:
+
+[X] Login/sign up page
+    [X] - form for login
+    [X] - link to sign up page
+    [X] - form for sign in
+
+[X] myDiary page
+    [X] - List meals
+    [X] - List foods under meals
+    [X] - add form under each meal after foods to add a food
+
+[X] myGoals page 
+    [X] - Section for Calorie and Macro goals
+    [X] - Edit button -> renders form to change it
+
+[X] myHistory
+    [X] - Shows date
+    [X] - under shoes calories consumed vs calories goal and the deficit
+    [X] - pulls all journal instances that belongs to that user
+
+[X] TDEE calc
+    [X] - Form for inputs...
+        [X] - weight
+        [X] - age
+        [X] - sex
+        - calculates calories
+    [X] - Takes calc calories and does macro split of...
+        - 1 g Protein per gram of bw
+        - 20% calories in fat
+        - rest in carbs
+
 ### Contact Info
 If you have any questions about this app or want to contact me in general, please email me at emrichmp@gmail.com.
 
