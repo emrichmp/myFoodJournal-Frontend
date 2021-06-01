@@ -76,15 +76,16 @@
 [ ] - There should be 5 stateless components
     - Navbar - stateless
 
-[ ] - There should be 3 routes
+[X] - There should be 3 routes
     - home, myDiary, myHistory, myGoals, TDEE, etc...
 
-[ ] - The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate
+[X] - The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate
     - Used react-router
 
 [ ] - Use Redux middleware to respond to and modify state change
 
 [ ] - Make use of async actions and redux-thunk middleware to send data to and receive data from a server
+    - used fetch() to send and receive data
 
 [ ] - Your Rails API should handle the data persistence with a database. You should be using fetch() within your actions to GET and POST data from your API - do not use jQuery methods.
 
