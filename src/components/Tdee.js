@@ -23,16 +23,9 @@ class Tdee extends React.Component {
         let nam = event.target.name;
         let val = event.target.value;
         this.setState({[nam]: val});
-        //console.log(typeof parseInt(this.state.age))
-        // if (typeof parseInt(this.state.age) === "number"){
-        //     console.log("number")
-        // } else { 
-        //     console.log("NaN")
-        // }
     }
 
     calorieCalculator(weight, height, age, sex, goal) {
-        //console.log(weight, height, age, sex, goal);
         let tdee = 0;
         if (sex==="female") {
             tdee = 655 + (9.6*weight) + (1.8*height) - (4.7*age)
@@ -44,7 +37,6 @@ class Tdee extends React.Component {
         } else if (goal==="gain") {
             tdee += 500
         }
-        console.log(tdee)
 
         tdee = parseInt(tdee)
         let tdee_protein = parseInt(2.4*weight)
