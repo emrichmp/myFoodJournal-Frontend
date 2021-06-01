@@ -51,12 +51,12 @@
     [X] - pulls all journal instances that belongs to that user
 
 [X] TDEE calc
-    - Form for inputs...
+    [X] - Form for inputs...
         [X] - weight
         [X] - age
         [X] - sex
-        - calculates calories
-    - Takes calc calories and does macro split of...
+        [X] - calculates calories
+    [X] - Takes calc calories and does macro split of...
         - 1 g Protein per gram of bw
         - 20% calories in fat
         - rest in carbs
