@@ -209,3 +209,8 @@ select {
 .signup-button:hover {
   background-color: rgb(135, 206, 150);
 }
+
+.error {
+  color: rgb(194, 26, 26);
+  font-size: medium;
+}
