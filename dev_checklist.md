@@ -75,7 +75,6 @@
 
 [ ] - There should be 5 stateless components
     - Navbar - stateless
-    - myHistory - stateless
 
 [ ] - There should be 3 routes
     - home, myDiary, myHistory, myGoals, TDEE, etc...
