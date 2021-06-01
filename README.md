@@ -24,6 +24,8 @@ You can also gain more of my insight and the process of this project on my [Medi
 ### Project Planning
 #### Planning Images for Project Layout
 ![Plan page](https://i.ibb.co/D44P60R/IMG-8072.jpg)
+![Another](https://i.ibb.co/V9Bpf9B/IMG-8073.jpg)
+![one mo](https://i.ibb.co/SnWfDjL/IMG-8074.jpg)
 
 #### I used this initial checklist to break up and plan aspects of the project:
 
