@@ -22,7 +22,7 @@
 [X] - iterate over each journal instance to grab calories consumed and date
 [] - Set up back end for logging in and signing up
 [] - have login find user and grab user_id
-[] - have signup check if user exists and create new user
+[] - have signup create new user
     [X] - POST req on submit
     - fix post req
 [] - After user signs up or logs in, have it switch login to App component
@@ -36,6 +36,7 @@
 [] - Form validations using onChange
 [] - have form render in and out
 [] - error messages for mis input
+[] - have sign up check if user exists
 
 # Sections
 [] Login/sign up page
