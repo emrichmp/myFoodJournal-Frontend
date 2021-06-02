@@ -18,7 +18,7 @@
     - then assigns it in patch
 [X] - Start myhistory by making fetch call
 [X] - iterate over each journal instance to grab calories consumed and date
-[] - have login find user and grab user_id
+[X] - have login find user and grab user_id
 [X] - have signup create new user
     [X] - POST req on submit
     [X] - fix post req
@@ -27,6 +27,7 @@
 [] - Finish setting up back end for logging in and signing up
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
+[] - sign in needs to authenticate
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1

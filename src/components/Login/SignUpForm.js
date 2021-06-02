@@ -33,15 +33,20 @@ class SignUpForm extends React.Component {
                     weight: weight
             })
         })
-        .then((response) => {
-            if (response.ok) {
-                this.loginHandler()
+        .then(response => response.json())
+        .then(data => {
+            if (data === "problem") {
+                this.setState({
+                    error: "Issue with sign up, make sure all fields are completed and weight is a number"
+                })
+            } else {
+                this.loginHandler(data)
             }
         })
     }
 
-    loginHandler() {
-        console.log("good!")
+    loginHandler(data) {
+        console.log(data)
         //Use state to start session here!
     }
 
