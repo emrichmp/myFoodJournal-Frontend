@@ -3,7 +3,11 @@ import React from 'react';
 class Mydiary extends React.Component {
 
     state = {
-        todayJournal: ""
+        todayJournal: {
+            attributes: {
+                date: ""
+            }
+        }
     }
 
     componentDidMount(){
@@ -31,7 +35,7 @@ class Mydiary extends React.Component {
         if (journal === ""){
             console.log("empty")
         } else {
-            console.log("chillin")
+            console.log(journal)
         }
     }
 
@@ -40,7 +44,7 @@ class Mydiary extends React.Component {
             <div>
                 <h1 className="Header"> myDiary! </h1>
                 <div className="diary-container">
-
+                    <h3>Journal Date: {this.state.todayJournal.attributes.date}</h3>
                 </div>
             </div>
         )
