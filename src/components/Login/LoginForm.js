@@ -37,16 +37,16 @@ class LoginForm extends React.Component {
                     error: "email or password is incorrect!"
                 })
             } else {
-                console.log(data)
-                //this.loginHandler(data)
+                //console.log(data)
+                this.loginHandler(data)
             }
         })
     }
 
     loginHandler(data) {
-        //start session here!
-        return window.user_id = data
-        //console.log(window.user_id)
+        localStorage.setItem('user', data);
+        const user = localStorage.getItem('user')
+        console.log(user)
     }
 
     render () {
