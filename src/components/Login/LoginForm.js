@@ -44,8 +44,9 @@ class LoginForm extends React.Component {
     }
 
     loginHandler(data) {
-        console.log(data)
         //start session here!
+        return window.user_id = data
+        //console.log(window.user_id)
     }
 
     render () {
