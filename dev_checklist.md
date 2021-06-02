@@ -16,16 +16,17 @@
 [X] - patch to api on submit
     - needs to pull data from form
     - then assigns it in patch
-[] - have components update with new goal data (ig by changing state - USE REDUX)
-    - passed state to parent comp - myGoals
 [X] - Start myhistory by making fetch call
 [X] - iterate over each journal instance to grab calories consumed and date
-[] - Set up back end for logging in and signing up
 [] - have login find user and grab user_id
-[] - have signup create new user
+[X] - have signup create new user
     [X] - POST req on submit
-    - fix post req
+    [X] - fix post req
+[] - Figure out how to do sessions in react
 [] - After user signs up or logs in, have it switch login to App component
+[] - Finish setting up back end for logging in and signing up
+[] - have components update with new goal data (ig by changing state - USE REDUX)
+    - passed state to parent comp - myGoals
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
