@@ -23,16 +23,18 @@
     [X] - POST req on submit
     [X] - fix post req
 [X] - Finish setting up back end for logging in and signing up
-[] - sign in needs to authenticate - rails validations
+[X] - sign in needs to authenticate - rails validations
 [] - Figure out how to do sessions in react - prolly w/ state
 [] - After user signs up or logs in, have it switch login to App component using the session state
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
+[] - figure out how to do has_secure_password
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
     - in myGoals and GoalForm and myHistory
 - Divide up component duties and get to 5 stateless components
+- Fix validation for password
 
 # Stretch Goals:
 [] - Form validations using onChange
