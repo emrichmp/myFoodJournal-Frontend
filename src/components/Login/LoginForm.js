@@ -22,8 +22,29 @@ class LoginForm extends React.Component {
     }
 
     fetchHandler(email, password) {
-        console.log(email, password)
+        fetch("http://localhost:3000/api/v1/sessions", {
+            method: 'POST',
+            headers: {"Content-Type": "application/json; charset=UTF-8"},
+            body: JSON.stringify({
+                    email: email,
+                    password: password,
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data === "problem"){
+                this.setState({
+                    error: "email or password is incorrect!"
+                })
+            } else {
+                console.log(data)
+                //this.loginHandler(data)
+            }
+        })
+    }
 
+    loginHandler(data) {
+        console.log(data)
     }
 
     render () {
@@ -31,6 +52,7 @@ class LoginForm extends React.Component {
         <div className="login">
             <h1 className="Header">Login!</h1>
             <form onSubmit= {this.submitHandler} className="login">
+                <h2 className="error">{this.state.error}</h2>
                 <label>
                     Email:
                     <input className="login-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
