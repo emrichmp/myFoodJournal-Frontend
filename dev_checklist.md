@@ -28,6 +28,7 @@
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
 [] - figure out how to do has_secure_password
+[] - finish fetchhandler in myDiary
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
