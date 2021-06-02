@@ -23,7 +23,6 @@ class SignUpForm extends React.Component {
     }
 
     postHandler(email, password, weight) {
-        console.log(password)
         fetch("http://localhost:3000/api/v1/users", {
             method: 'POST',
             headers: {"Content-Type": "application/json; charset=UTF-8"},
@@ -46,8 +45,9 @@ class SignUpForm extends React.Component {
     }
 
     loginHandler(data) {
-        console.log(data)
-        //Use state to start session here!
+        localStorage.setItem('user', data);
+        const user = localStorage.getItem('user')
+        console.log(user)
     }
 
     changeHandler = (event) => {
