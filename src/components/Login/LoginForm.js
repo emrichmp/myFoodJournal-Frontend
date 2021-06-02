@@ -45,6 +45,7 @@ class LoginForm extends React.Component {
 
     loginHandler(data) {
         console.log(data)
+        //start session here!
     }
 
     render () {
