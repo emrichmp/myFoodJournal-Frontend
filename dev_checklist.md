@@ -93,7 +93,7 @@
 
 [ ] - Use Redux middleware to respond to and modify state change
 
-[ ] - Make use of async actions and redux-thunk middleware to send data to and receive data from a server
+[X] - Make use of async actions and redux-thunk middleware to send data to and receive data from a server
     - used fetch() to send and receive data
 
 [X] - Your Rails API should handle the data persistence with a database. You should be using fetch() within your actions to GET and POST data from your API (do not use jQuery methods).
