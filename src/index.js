@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './components/Login/Loginpage'
+import Loginpage from './components/Login/Loginpage'
 import reportWebVitals from './reportWebVitals';
 
 window.loggedIn = 0
@@ -13,7 +13,7 @@ if (window.loggedIn === 1) {
     document.getElementById('root'));
 } else {
   ReactDOM.render(
-    <React.StrictMode> <Login /> </React.StrictMode>,
+    <React.StrictMode> <Loginpage /> </React.StrictMode>,
     document.getElementById('root'));
 }
 
