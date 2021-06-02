@@ -5,6 +5,9 @@ class Mydiary extends React.Component {
         return(
             <div>
                 <h1 className="Header"> myDiary! </h1>
+                <div className="diary-container">
+
+                </div>
             </div>
         )
     }
