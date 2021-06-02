@@ -22,7 +22,7 @@
 [X] - have signup create new user
     [X] - POST req on submit
     [X] - fix post req
-[] - Figure out how to do sessions in react
+[] - Figure out how to do sessions in react - prolly w/ state
 [] - After user signs up or logs in, have it switch login to App component
 [] - Finish setting up back end for logging in and signing up
 [] - have components update with new goal data (ig by changing state - USE REDUX)
