@@ -24,7 +24,6 @@
     [X] - fix post req
 [X] - Finish setting up back end for logging in and signing up
 [X] - sign in needs to authenticate - rails validations
-[] - Figure out how to do sessions in react - prolly w/ state
 [] - After user signs up or logs in, have it switch login to App component using the session state
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
