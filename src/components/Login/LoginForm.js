@@ -2,17 +2,28 @@ import React from 'react';
 
 class LoginForm extends React.Component {
 
+    state = {
+        email: "",
+        password: "",
+        error: ""
+    }
+
     submitHandler = (event) => {
         event.preventDefault()
-        console.log("login button")
-        //return window.loggedIn = 1
-        //console.log(window.loggedIn)
+        let password = this.state.password
+        let email = this.state.email
+        this.fetchHandler(email, password)
     }
 
     changeHandler = (event) => {
         let nam = event.target.name;
         let val = event.target.value;
         this.setState({[nam]: val});
+    }
+
+    fetchHandler(email, password) {
+        console.log(email, password)
+
     }
 
     render () {
