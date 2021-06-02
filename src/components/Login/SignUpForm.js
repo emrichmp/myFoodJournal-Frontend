@@ -33,8 +33,16 @@ class SignUpForm extends React.Component {
                     weight: weight
             })
         })
-        .then(response => response.json())
-        .then(json => console.log(json))
+        .then((response) => {
+            if (response.ok) {
+                this.loginHandler()
+            }
+        })
+    }
+
+    loginHandler() {
+        console.log("good!")
+        //Use state to start session here!
     }
 
     changeHandler = (event) => {
