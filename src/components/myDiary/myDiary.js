@@ -2,6 +2,10 @@ import React from 'react';
 
 class Mydiary extends React.Component {
 
+    state = {
+        todayJournal: ""
+    }
+
     componentDidMount(){
         let user_id = 1
 
@@ -9,13 +13,26 @@ class Mydiary extends React.Component {
         .then(response => response.json())
         .then(
             (result) => {
-                
-                let today = new Date().toISOString().slice(0, 10)
-                console.log(result.data[0].attributes.date)
-                console.log(user_id)
-                console.log(today)
+                const today = new Date().toISOString().slice(0, 10)
+                result.data.forEach((journal) => {
+                    if (journal.attributes.user_id === user_id && journal.attributes.date === today) {
+                        this.setState({
+                            todayJournal: journal
+                        })
+                    }
+                })
+                this.fetchHandler()
             }
         )
+    }
+
+    fetchHandler(){
+        const journal = this.state.todayJournal
+        if (journal === ""){
+            console.log("empty")
+        } else {
+            console.log("chillin")
+        }
     }
 
     render () {
