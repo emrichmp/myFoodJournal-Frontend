@@ -36,7 +36,7 @@ myGoals to dos
     - passed state to parent comp - myGoals
 
 myDiary to dos
-[] - POST req to create journal if none exists - dont forget utc - DateTime.now.utc
+[] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
 [] - format the myDiary data
 [] - Make meal component that will hold food
 [] - add section under each meal to add food
