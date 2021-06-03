@@ -37,7 +37,7 @@ myGoals to dos
 
 myDiary to dos
 [] - format the myDiary data
-[] - POST req to create journal if none exists - dont forget utc
+[] - POST req to create journal if none exists - dont forget utc - DateTime.now.utc
 [] - Make meal component that will hold food
 [] - add section under each meal to add food
 [] - POST req for food being added
