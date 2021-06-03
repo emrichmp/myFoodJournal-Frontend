@@ -1,6 +1,32 @@
 import React from 'react';
 
 class AddFoods extends React.Component {
+
+    state = {
+        name: "",
+        calories: "", 
+        protein: "",
+        fat: "",
+        carb: ""
+    }
+
+    clickHandler = (event) => {
+        event.preventDefault()
+        console.log("in click")
+        let calories = this.state.calories
+        let protein = this.state.protein
+        let fat = this.state.fat
+        let carb = this.state.carb
+        console.log(calories, protein, fat, carb)
+        //Update state to add food
+    }
+
+    changeHandler = (event) => {
+        let nam = event.target.name;
+        let val = event.target.value;
+        this.setState({[nam]: val});
+    }
+
     render () {
         return(
             <div>
@@ -16,7 +42,7 @@ class AddFoods extends React.Component {
                     <input className="add-food" type="text" name="fat" placeholder="g" onChange={this.changeHandler} />
                     <label>Carb: </label>
                     <input className="add-food" type="text" name="carb" placeholder="g" onChange={this.changeHandler} />
-                    <button className="food-button"> Add Food to Diary </button>
+                    <button className="food-button" onClick={this.clickHandler} > Add Food to Diary </button>
                 </form>
             </div>
         )
