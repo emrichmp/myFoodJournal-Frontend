@@ -42,7 +42,7 @@ myDiary to dos
 [] - add section under each meal to add food
 [] - POST req for food being added
     - POST to food and food meals
-[] - adding food form save
+[] - adding food form - add food to under the meal
 [] - save button action
 
 # NEED
