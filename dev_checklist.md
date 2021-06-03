@@ -42,6 +42,8 @@ myDiary to dos
 [] - add section under each meal to add food
 [] - POST req for food being added
     - POST to food and food meals
+[] - adding food form save
+[] - save button action
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1

@@ -4,6 +4,7 @@ class AddFoods extends React.Component {
     render () {
         return(
             <div>
+                <button className="save-button">Save Diary!</button>
                 <form>
                     <label>Food Name: </label>
                     <input className="add-food" type="text" name="name" placeholder="ex: chicken" onChange={this.changeHandler} />
