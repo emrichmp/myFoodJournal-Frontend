@@ -11,7 +11,6 @@ class GoalForm extends React.Component {
     }
 
     submitHandler = (event) => {
-        event.preventDefault()
         let goalweight = this.state.goalweight
         let goalcalories = this.state.goalcalories
         let goalprotein = this.state.goalprotein
