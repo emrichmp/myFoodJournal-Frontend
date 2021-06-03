@@ -24,11 +24,15 @@
     [X] - fix post req
 [X] - Finish setting up back end for logging in and signing up
 [X] - sign in needs to authenticate - rails validations
+[X] - finish fetchhandler in myDiary
 [] - After user signs up or logs in, have it switch login to App component using the session state
 [] - have components update with new goal data (ig by changing state - USE REDUX)
     - passed state to parent comp - myGoals
 [] - figure out how to do has_secure_password
-[] - finish fetchhandler in myDiary
+[] - format the myDiary data
+[] - add section under each meal to add food
+[] - POST req for food being added
+    - POST to food and food meals
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
