@@ -3,11 +3,10 @@ import React from 'react';
 class Mydiary extends React.Component {
 
     state = {
-        todayJournal: {
-            attributes: {
-                date: ""
-            }
-        }
+        todayJournal: {},
+        date: "",
+        foods: [],
+        meals: []
     }
 
     componentDidMount(){
@@ -22,7 +21,10 @@ class Mydiary extends React.Component {
                 result.data.forEach((journal) => {
                     if (journal.attributes.user_id === user_id && journal.attributes.date === today) {
                         this.setState({
-                            todayJournal: journal
+                            todayJournal: journal,
+                            date: journal.attributes.date,
+                            foods: journal.attributes.foods,
+                            meals: journal.attributes.meals
                         })
                     }
                 })
@@ -37,6 +39,8 @@ class Mydiary extends React.Component {
             this.createJournal()
         } else {
             console.log(journal)
+            console.log(this.state.foods)
+            console.log(this.state.meals)
         }
     }
 
@@ -50,7 +54,7 @@ class Mydiary extends React.Component {
             <div>
                 <h1 className="Header"> myDiary! </h1>
                 <div className="diary-container">
-                    <h3 className ="info">Journal Date: {this.state.todayJournal.attributes.date}</h3>
+                    <h3 className ="info">Journal Date: {this.state.date}</h3>
                 </div>
             </div>
         )
