@@ -31,10 +31,6 @@ Sign up/login to dos
 [] - figure out how to do has_secure_password
 [] - have all components access this user_id(session) to pull the correct data on GETs
 
-myGoals to dos
-[] - have components update with new goal data (ig by changing state - USE REDUX)
-    - passed state to parent comp - myGoals
-
 myDiary to dos
 [] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
 [] - format the myDiary data
@@ -68,7 +64,7 @@ myDiary to dos
     - List foods under meals
     - add form under each meal after foods to add a food
 
-[] myGoals page 
+[X] myGoals page 
     [X] - Section for Calorie and Macro goals
     [X] - Edit button -> renders form to change it
 
