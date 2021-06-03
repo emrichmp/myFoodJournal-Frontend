@@ -213,3 +213,8 @@ select {
   color: rgb(194, 26, 26);
   font-size: medium;
 }
+
+.info {
+  color: white;
+  padding: 0.5rem 7rem;
+}

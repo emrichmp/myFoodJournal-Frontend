@@ -44,7 +44,7 @@ class Mydiary extends React.Component {
             <div>
                 <h1 className="Header"> myDiary! </h1>
                 <div className="diary-container">
-                    <h3>Journal Date: {this.state.todayJournal.attributes.date}</h3>
+                    <h3 className ="info">Journal Date: {this.state.todayJournal.attributes.date}</h3>
                 </div>
             </div>
         )
