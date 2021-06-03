@@ -218,3 +218,9 @@ select {
   color: white;
   padding: 0.5rem 7rem;
 }
+
+.meals {
+  background: rgb(207, 209, 211);
+  color: black;
+  text-align: center;
+}
