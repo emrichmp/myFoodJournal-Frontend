@@ -18,6 +18,7 @@ class Mydiary extends React.Component {
         .then(
             (result) => {
                 const today = new Date().toISOString().slice(0, 10)
+                //const today = "blah"
                 result.data.forEach((journal) => {
                     if (journal.attributes.user_id === user_id && journal.attributes.date === today) {
                         this.setState({
@@ -32,11 +33,16 @@ class Mydiary extends React.Component {
 
     fetchHandler(){
         const journal = this.state.todayJournal
-        if (journal === ""){
-            console.log("empty")
+        if (journal.attributes.date === ""){
+            this.createJournal()
         } else {
             console.log(journal)
         }
+    }
+
+    createJournal() {
+        //post req to create journcal
+        console.log("create journal")
     }
 
     render () {
