@@ -1,4 +1,5 @@
 import React from 'react';
+import AddFoods from './AddFoods'
 
 class Mydiary extends React.Component {
 
@@ -75,6 +76,7 @@ class Mydiary extends React.Component {
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
+                    <AddFoods />
                     <ul className="meals">
                     {this.state.meals.map((item, index) => {
                         return (
