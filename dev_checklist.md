@@ -27,7 +27,6 @@
 [X] - finish fetchhandler in myDiary
 
 Sign up/login to dos
-[] - switch loggedin to state
 [] - After user signs up or logs in, have it switch login to App component using the session state
 [] - figure out how to do has_secure_password
 [] - have all components access this user_id(session) to pull the correct data on GETs
