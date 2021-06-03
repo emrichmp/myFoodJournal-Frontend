@@ -75,6 +75,9 @@ class Mydiary extends React.Component {
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
+                    {this.state.meals.forEach((item) => {
+                        <h3>{console.log(item.name)}</h3>
+                    })}
                 </div>
             </div>
         )
