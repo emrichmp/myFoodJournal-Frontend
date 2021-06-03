@@ -7,7 +7,7 @@ class Mydiary extends React.Component {
         date: "",
         foods: [],
         meals: [],
-        calories_consumed: ""
+        calories_consumed: "",
     }
 
     componentDidMount(){
@@ -40,7 +40,7 @@ class Mydiary extends React.Component {
                 date: journal.attributes.date,
                 foods: journal.attributes.foods,
                 meals: journal.attributes.meals,
-                calories_consumed: journal.attributes.calories_consumed
+                calories_consumed: journal.attributes.calories_consumed,
             })
             //Remove this when finished!
             console.log(journal)
@@ -71,13 +71,17 @@ class Mydiary extends React.Component {
     render () {
         return(
             <div>
-                <h1 className="Header"> myDiary! </h1>
+                <h1 className="Header"> myDiary!</h1>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
-                    {this.state.meals.forEach((item) => {
-                        <h3>{console.log(item.name)}</h3>
+                    <ul className="meals">
+                    {this.state.meals.map((item, index) => {
+                        return (
+                        <li key={index}>{item.name}</li>
+                        )
                     })}
+                    </ul>
                 </div>
             </div>
         )
