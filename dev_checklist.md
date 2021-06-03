@@ -29,7 +29,8 @@
 Sign up/login to dos
 [] - After user signs up or logs in, have it switch login to App component using the session state
 [] - figure out how to do has_secure_password
-[] - have all components access this user_id(session) to pull the correct data on GETs
+[X] - have all components access this user_id(session) to pull the correct data on GETs
+    - did this w/ localStorage
 
 myDiary to dos
 [] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
