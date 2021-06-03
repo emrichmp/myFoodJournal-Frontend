@@ -6,7 +6,8 @@ class Mydiary extends React.Component {
         todayJournal: {},
         date: "",
         foods: [],
-        meals: []
+        meals: [],
+        calories_consumed: ""
     }
 
     componentDidMount(){
@@ -21,10 +22,7 @@ class Mydiary extends React.Component {
                 result.data.forEach((journal) => {
                     if (journal.attributes.user_id === user_id && journal.attributes.date === today) {
                         this.setState({
-                            todayJournal: journal,
-                            date: journal.attributes.date,
-                            foods: journal.attributes.foods,
-                            meals: journal.attributes.meals
+                            todayJournal: journal
                         })
                     }
                 })
@@ -35,9 +33,16 @@ class Mydiary extends React.Component {
 
     fetchHandler(){
         const journal = this.state.todayJournal
-        if (journal.attributes.date === ""){
+        if (Object.keys(journal).length === 0){
             this.createJournal()
         } else {
+            this.setState({
+                date: journal.attributes.date,
+                foods: journal.attributes.foods,
+                meals: journal.attributes.meals,
+                calories_consumed: journal.attributes.calories_consumed
+            })
+            //Remove this when finished!
             console.log(journal)
             console.log(this.state.foods)
             console.log(this.state.meals)
@@ -45,7 +50,7 @@ class Mydiary extends React.Component {
     }
 
     createJournal() {
-        //post req to create journcal
+        //post req to create journal
         console.log("create journal")
     }
 
@@ -54,7 +59,8 @@ class Mydiary extends React.Component {
             <div>
                 <h1 className="Header"> myDiary! </h1>
                 <div className="diary-container">
-                    <h3 className ="info">Journal Date: {this.state.date}</h3>
+                    <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
+                    --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
                 </div>
             </div>
         )
