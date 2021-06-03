@@ -73,7 +73,7 @@ class Mydiary extends React.Component {
                 <h1 className="Header"> myDiary! </h1>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
-                    --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
+                    cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
                 </div>
             </div>
         )
