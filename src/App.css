@@ -224,3 +224,7 @@ select {
   color: black;
   text-align: center;
 }
+
+.select-meal {
+  width: 7%;
+}

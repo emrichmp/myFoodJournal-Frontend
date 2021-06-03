@@ -42,6 +42,12 @@ class AddFoods extends React.Component {
                     <input className="add-food" type="text" name="fat" placeholder="g" onChange={this.changeHandler} />
                     <label>Carb: </label>
                     <input className="add-food" type="text" name="carb" placeholder="g" onChange={this.changeHandler} />
+                    <label> Food: </label>
+                    <select className="select-meal" name="meal">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch"> Lunch </option>
+                        <option value="Dinner"> Dinner </option>
+                    </select>
                     <button className="food-button" onClick={this.clickHandler} > Add Food to Diary </button>
                 </form>
             </div>
