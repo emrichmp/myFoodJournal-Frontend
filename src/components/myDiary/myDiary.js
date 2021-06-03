@@ -52,19 +52,20 @@ class Mydiary extends React.Component {
     createJournal() {
         //post req to create journal
         console.log("create journal")
-        // fetch("http://localhost:3000/api/v1/journals", {
-        //     method: 'POST',
-        //     headers: {"Content-Type": "application/json; charset=UTF-8"},
-        //     body: JSON.stringify({
-        //             date: new Date().toISOString().slice(0, 10),
-        //             user_id: 1,
-        //             calories_consumed: 0
-        //     })
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     console.log(data)
-        // })
+        fetch("http://localhost:3000/api/v1/journals", {
+            method: 'POST',
+            headers: {"Content-Type": "application/json; charset=UTF-8"},
+            body: JSON.stringify({
+                    date: new Date().toISOString().slice(0, 10),
+                    //THIS NEED TO BE CHANGED TO REAL ID
+                    user_id: 1,
+                    calories_consumed: 0
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
     }
 
     render () {
