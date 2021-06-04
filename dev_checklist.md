@@ -25,15 +25,12 @@
 [X] - Finish setting up back end for logging in and signing up
 [X] - sign in needs to authenticate - rails validations
 [X] - finish fetchhandler in myDiary
-
 Sign up/login to dos
 [X] - After user signs up or logs in, have it switch login to App component using the loggedIn state
 [X] - have all components access the window.localStorage('user') to pull the correct data on GETs
    [X] - myGoals
    [X] - myHistory
    [X] - myDiary
-[] - Pass goal_id to goalfrom to patch the right goal
-[] - Goal needs to handle case of new goal
 
 myDiary to dos
 [X] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
@@ -45,6 +42,9 @@ myDiary to dos
 [] - upon creation of journal, also create Journal with 3 meals - Breakfast, Lunch and Dinner?
 [X] - adding food form
 [] - save button action
+
+[] - Pass goal_id to goalfrom to patch the right goal
+[] - Goal needs to handle case of new goal
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
