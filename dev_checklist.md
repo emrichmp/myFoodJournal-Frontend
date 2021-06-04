@@ -27,26 +27,25 @@
 [X] - finish fetchhandler in myDiary
 
 Sign up/login to dos
-[] - After user signs up or logs in, have it switch login to App component using the session state
-[] - figure out how to do has_secure_password
-[X] - have all components access this user_id(session) to pull the correct data on GETs
-    - did this w/ localStorage
+[] - After user signs up or logs in, have it switch login to App component using the loggedIn state
+[] - have all components access the window.localStorage('user') to pull the correct data on GETs
 
 myDiary to dos
-[] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
+[X] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
 [] - format the myDiary data
 [] - Make meal component that will hold food
-[] - add section under each meal to add food
+[] - Add food form
 [] - POST req for food being added
-    - POST to food and food meals
-[] - adding food form - add food to under the meal
+    - POST to food
+[] - upon creation of journal, also create Journal with 3 meals - Breakfast, Lunch and Dinner?
+[X] - adding food form
 [] - save button action
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
-    - in myGoals and GoalForm and myHistory
+    - in myGoals and GoalForm and myHistory and myDiary
 - Divide up component duties and get to 5 stateless components
-- Fix validation for password
+- Fix validation for password/fix has_secure_password
 
 # Stretch Goals:
 [] - Form validations using onChange
