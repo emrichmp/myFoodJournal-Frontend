@@ -7,22 +7,25 @@ class Mygoals extends React.Component {
         goalWeight: "",
         calories: "",
         macros: "",
-        form: ""
+        form: "",
+        goal_id: ""
     }
 
     componentDidMount() {
         //HAVE TO CHANGE THIS SO IT IS THE ACTUAL USER ID
-        let user_id = 1
+        const user_id = localStorage.getItem('user')
 
         fetch(`http://localhost:3000/api/v1/users/${user_id}`)
         .then(response => response.json())
         .then(
             (result) => {
+                console.log(result)
                 let data = result.data.attributes.goal
                 this.setState({
                     goalWeight: `${data.goalweight} kg`,
                     calories: `${data.calories} calories`,
-                    macros: `${data.protein} protein, ${data.carbs} carbs and ${data.fats} fat`
+                    macros: `${data.protein} protein, ${data.carbs} carbs and ${data.fats} fat`,
+                    goal_id: data.id
                 })
             }
         )
