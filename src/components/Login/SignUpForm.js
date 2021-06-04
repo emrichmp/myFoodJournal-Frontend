@@ -48,8 +48,6 @@ class SignUpForm extends React.Component {
 
     loginHandler(data) {
         localStorage.setItem('user', data);
-        const user = localStorage.getItem('user')
-        console.log(user)
         this.props.dispatch({ type: "LOGIN" });
     }
 
