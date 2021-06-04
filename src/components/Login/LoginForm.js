@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { connect } from "react-redux"
+
 class LoginForm extends React.Component {
 
     state = {
@@ -46,6 +48,7 @@ class LoginForm extends React.Component {
         localStorage.setItem('user', data);
         const user = localStorage.getItem('user')
         console.log(user)
+        this.props.dispatch({ type: "LOGIN" });
     }
 
     render () {
@@ -68,5 +71,9 @@ class LoginForm extends React.Component {
       );
     }
   }
+
+  const mapStateToProps = state => ({
+      loggedIn: state.loggedIn
+  })
     
-export default LoginForm;
+export default connect(mapStateToProps)(LoginForm);

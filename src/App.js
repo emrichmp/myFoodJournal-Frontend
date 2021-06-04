@@ -12,14 +12,12 @@ import Mygoals from './components/myGoals/myGoals';
 import myHistory from './components/myHistory';
 import Loginpage from './components/Login/Loginpage';
 
+import { connect } from "react-redux"
+
 class App extends React.Component {
 
-  state = {
-    loggedIn: false
-  }
-
   render () {
-    if (this.state.loggedIn === true) {
+    if (this.props.loggedIn === true) {
     return (
             <div className="App">
               <HashRouter>
@@ -35,10 +33,14 @@ class App extends React.Component {
           );
     } else {
       return (
-        <Loginpage />
+          <Loginpage />
       )
     }
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  loggedIn: state.loggedIn
+})
+
+export default connect(mapStateToProps)(App);

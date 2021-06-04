@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { connect } from "react-redux"
+
 class SignUpForm extends React.Component {
     state = {
         email: "",
@@ -48,6 +50,7 @@ class SignUpForm extends React.Component {
         localStorage.setItem('user', data);
         const user = localStorage.getItem('user')
         console.log(user)
+        this.props.dispatch({ type: "LOGIN" });
     }
 
     changeHandler = (event) => {
@@ -84,5 +87,9 @@ class SignUpForm extends React.Component {
         );
       }
     }
+
+    const mapStateToProps = state => ({
+        loggedIn: state.loggedIn
+    })
     
-export default SignUpForm;
+export default connect(mapStateToProps)(SignUpForm);
