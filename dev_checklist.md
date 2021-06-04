@@ -29,6 +29,8 @@
 Sign up/login to dos
 [X] - After user signs up or logs in, have it switch login to App component using the loggedIn state
 [] - have all components access the window.localStorage('user') to pull the correct data on GETs
+    - myGoals
+    - myHistory
 [] - Pass goal_id to goalfrom to patch the right goal
 [] - Goal needs to handle case of new goal
 
