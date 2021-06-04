@@ -27,7 +27,7 @@
 [X] - finish fetchhandler in myDiary
 
 Sign up/login to dos
-[] - After user signs up or logs in, have it switch login to App component using the loggedIn state
+[X] - After user signs up or logs in, have it switch login to App component using the loggedIn state
 [] - have all components access the window.localStorage('user') to pull the correct data on GETs
 
 myDiary to dos
