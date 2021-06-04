@@ -12,7 +12,7 @@ class Mydiary extends React.Component {
     }
 
     componentDidMount(){
-        let user_id = 1
+        const user_id = localStorage.getItem('user')
 
         fetch(`http://localhost:3000/api/v1/journals`)
         .then(response => response.json())
@@ -51,6 +51,7 @@ class Mydiary extends React.Component {
     }
 
     createJournal() {
+        const user_id = localStorage.getItem('user')
         //post req to create journal
         console.log("create journal")
         fetch("http://localhost:3000/api/v1/journals", {
@@ -59,7 +60,7 @@ class Mydiary extends React.Component {
             body: JSON.stringify({
                     date: new Date().toISOString().slice(0, 10),
                     //THIS NEED TO BE CHANGED TO REAL ID
-                    user_id: 1,
+                    user_id: user_id,
                     calories_consumed: 0
             })
         })
