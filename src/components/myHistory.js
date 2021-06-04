@@ -2,20 +2,25 @@ import React from 'react';
 
 class myHistory extends React.Component {
 
-    state = {goalCalories: "", journalData: []}
+    state = {goalCalories: "", journalData: [], error: ""}
 
     componentDidMount() {
         //HAVE TO CHANGE THIS SO IT IS THE ACTUAL USER ID
-        let user_id = 1
+        const user_id = localStorage.getItem('user')
 
         fetch(`http://localhost:3000/api/v1/users/${user_id}`)
         .then(response => response.json())
         .then(
             (result) => {
-                let calories = result.data.attributes.goal.calories
-                let journals = result.data.attributes.journals
-                this.historyHandler(calories, journals)
-
+                if (result.data === null){
+                    this.setState({
+                        error: "You're new so there isn't any history yet! Go start on your food journal!"
+                    })
+                } else {
+                    let calories = result.data.attributes.goal.calories
+                    let journals = result.data.attributes.journals
+                    this.historyHandler(calories, journals)
+                }
             }
         )
     }
@@ -35,6 +40,7 @@ class myHistory extends React.Component {
                 <h1 className="Header"> myHistory! </h1>
                 <h2 className="tdee-form">Calorie Goal: {this.state.goalCalories} Calories</h2>
                 <ul className="journal-data-list">
+                    <li>{this.state.error}</li>
                     {this.state.journalData.map((item, index) => {
                         return(
                             <li key={index}>
