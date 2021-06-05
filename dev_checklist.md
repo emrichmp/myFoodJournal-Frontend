@@ -44,7 +44,8 @@ myDiary to dos
 [] - save button action
 
 [] - Pass goal_id to goalfrom to patch the right goal
-[] - Goal needs to handle case of new goal
+[] - Goal needs to handle case of no goal
+[] - have goal update state w/ redux
 
 # NEED
 - need to make sure user_id and goal_id is the one for the actual user, not 1
