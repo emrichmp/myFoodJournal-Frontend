@@ -27,7 +27,7 @@ class GoalForm extends React.Component {
 
     patchHandler(goalweight, goalcalories, goalprotein, goalfats, goalcarbs) {
         //HAVE TO CHANGE THIS SO IT IS THE ACTUAL Goal ID
-        let goal_id = 1
+        const goal_id = this.props.goal_id
 
         fetch(`http://localhost:3000/api/v1/goals/${goal_id}`, {
             method: 'PATCH',

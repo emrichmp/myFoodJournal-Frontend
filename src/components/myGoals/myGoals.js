@@ -33,7 +33,7 @@ class Mygoals extends React.Component {
 
     handleClick = (event) => {
         this.setState({
-            form: < GoalForm />
+            form: < GoalForm goal_id={this.state.goal_id}/>
         })
     }
 
