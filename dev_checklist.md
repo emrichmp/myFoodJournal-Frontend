@@ -50,8 +50,8 @@ myDiary to dos
 [] - Have goal update state and not refresh page on form submit
 
 # NEED
-- need to make sure user_id and goal_id is the one for the actual user, not 1
-    - in myGoals and GoalForm and myHistory and myDiary
+[X] - need to make sure user_id and goal_id is the one for the actual user, not 1
+    [X] - in myGoals and GoalForm and myHistory and myDiary
 - Divide up component duties and get to 5 stateless components
 - Fix validation for password/fix has_secure_password
 
