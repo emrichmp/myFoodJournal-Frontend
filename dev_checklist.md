@@ -106,6 +106,7 @@ myDiary to dos
 
 [ ] - There should be 5 stateless components
     - Navbar - stateless
+    - Loginpage - stateless
 
 [X] - There should be 3 routes
     - home, myDiary, myHistory, myGoals, TDEE, etc...
