@@ -45,8 +45,7 @@ myDiary to dos
 
 [X] - Pass goal_id to goalfrom to patch the right goal
 [X] - Goal needs to handle case of no goal
-[] - Have a goal created if no goal is present
-    [] - update state on completion
+[X] - Have a goal created if no goal is present
 [] - Have goal update state and not refresh page on form submit
 [] - Get logout button to work
 
