@@ -48,6 +48,7 @@ myDiary to dos
 [] - Have a goal created if no goal is present
     [] - update state on completion
 [] - Have goal update state and not refresh page on form submit
+[] - Get logout button to work
 
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
