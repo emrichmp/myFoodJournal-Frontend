@@ -41,6 +41,23 @@ class Mygoals extends React.Component {
     createGoal() {
         //POST REQ for creating a goal for the user!
         console.log("In create goal")
+        const user_id = localStorage.getItem('user')
+        fetch(`http://localhost:3000/api/v1/goals`, {
+            method: 'POST',
+            headers: {"Content-Type": "application/json; charset=UTF-8"},
+            body: JSON.stringify({
+                    calories: 0,
+                    protein: 0,
+                    fats: 0,
+                    carbs: 0,
+                    goalweight: 0,
+                    user_id: user_id
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
     }
 
     handleClick = (event) => {

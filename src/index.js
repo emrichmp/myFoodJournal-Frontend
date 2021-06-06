@@ -9,7 +9,7 @@ import { createStore } from "redux";
 import { Provider } from "react-redux"
 
 const initialState = {
-  loggedIn: false
+  loggedIn: true
 };
 
 function reducer(state = initialState, action) {
