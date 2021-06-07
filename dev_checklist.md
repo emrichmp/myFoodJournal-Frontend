@@ -55,6 +55,9 @@ myDiary to dos
 [X] - Have a goal created if no goal is present
 [X] - Get logout button to work
 
+- Figure out login thing
+- after myGoals posts, have the window.history change
+
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
     [X] - in myGoals and GoalForm and myHistory and myDiary
@@ -136,5 +139,7 @@ myDiary to dos
 
 [X] - Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
     - Styled w/ my CSS
+
+[] - 2 Container Components
 
 [ ] - Once your app is complete, fill out the checklist
