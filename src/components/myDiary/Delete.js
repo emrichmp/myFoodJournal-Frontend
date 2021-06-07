@@ -5,6 +5,14 @@ class Delete extends React.Component {
     clickHandler = (event) => {
         const id = event.target.id
         console.log(id)
+        this.destroyFetch(id)
+    }
+
+    destroyFetch(id){
+        console.log(id)
+        fetch(`http://localhost:3000/api/v1/foods/${id}`, {
+        method: 'DELETE'
+        })
     }
     
     render(){
