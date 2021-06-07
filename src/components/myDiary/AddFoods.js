@@ -12,13 +12,30 @@ class AddFoods extends React.Component {
 
     clickHandler = (event) => {
         event.preventDefault()
-        console.log("in click")
+        let name = this.state.name
         let calories = this.state.calories
         let protein = this.state.protein
         let fat = this.state.fat
         let carb = this.state.carb
-        console.log(calories, protein, fat, carb)
-        //Update state to add food
+        this.fetchHandler(name, calories, protein, fat, carb)
+    }
+
+    fetchHandler(name, calories, protein, fat, carb){
+        console.log(name, calories, protein, fat, carb)
+
+        // fetch("http://localhost:3000/api/v1/foods", {
+        //     method: 'POST',
+        //     headers: {"Content-Type": "application/json; charset=UTF-8"},
+        //     body: JSON.stringify({
+        //             name: name,
+        //             calories: calories,
+        //             protein: protein,
+        //             fat: fat,
+        //             carb: carb,
+        //             user_id: user_id
+        //     })
+        // })
+        // .then(response => response.json())
     }
 
     changeHandler = (event) => {
