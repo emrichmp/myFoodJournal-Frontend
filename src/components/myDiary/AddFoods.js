@@ -1,4 +1,5 @@
 import React from 'react';
+//import FoodItem from "./FoodItem"
 
 class AddFoods extends React.Component {
 
@@ -13,12 +14,17 @@ class AddFoods extends React.Component {
     clickHandler = (event) => {
         event.preventDefault()
         console.log("in click")
+        let name = this.state.name
         let calories = this.state.calories
         let protein = this.state.protein
         let fat = this.state.fat
         let carb = this.state.carb
-        console.log(calories, protein, fat, carb)
+        console.log(name, calories, protein, fat, carb)
         //Update state to add food
+        // this.render (
+        //     <FoodItem name={this.state.name} calories={this.state.calories} protein={this.state.protein} 
+        //                 fat={this.state.fat} carb={this.state.carb}/>
+        // )
     }
 
     changeHandler = (event) => {
@@ -42,12 +48,6 @@ class AddFoods extends React.Component {
                     <input className="add-food" type="text" name="fat" placeholder="g" onChange={this.changeHandler} />
                     <label>Carb: </label>
                     <input className="add-food" type="text" name="carb" placeholder="g" onChange={this.changeHandler} />
-                    <label> Food: </label>
-                    <select className="select-meal" name="meal">
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Lunch"> Lunch </option>
-                        <option value="Dinner"> Dinner </option>
-                    </select>
                     <button className="food-button" onClick={this.clickHandler} > Add Food to Diary </button>
                 </form>
             </div>
