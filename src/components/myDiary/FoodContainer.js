@@ -15,7 +15,10 @@ class FoodContainer extends React.Component {
         fat_goal: "",
         carb_goal: "",
         journal_id: "",
-        totalCalories: 0
+        totalCalories: 0,
+        totalProtein: 0,
+        totalFat: 0,
+        totalCarb: 0
     }
 
     componentDidMount(){
@@ -26,7 +29,6 @@ class FoodContainer extends React.Component {
         .then(
             (result) => {
                 const today = new Date().toISOString().slice(0, 10)
-                //const today = "blah"
                 result.data.forEach((journal) => {
                     if (journal.attributes.user_id === user_id && journal.attributes.date === today) {
                         this.setState({
@@ -44,7 +46,6 @@ class FoodContainer extends React.Component {
                 if (Object.keys(result.data).length === 0){
                     console.log("no goals")
                 } else {
-                    console.log(result.data.attributes.goal)
                     this.setState({
                         calorie_goal: result.data.attributes.goal.calories,
                         protein_goal: result.data.attributes.goal.protein,
@@ -57,7 +58,6 @@ class FoodContainer extends React.Component {
 
     fetchHandler(){
         const journal = this.state.todayJournal
-        //console.log(journal)
         if (Object.keys(journal).length === 0){
             this.createJournal()
         } else {
@@ -68,21 +68,17 @@ class FoodContainer extends React.Component {
                 journal_id: journal.id
             })
             this.totalCalories(journal.attributes.calories_consumed, journal)
-            //Remove this when finished!
-            //console.log(this.state.journal_id)
-            //console.log(this.state.foods)
-            //console.log(this.state.meals)
         }
     }
 
     totalCalories(calories_consumed, journal){
-        //console.log(calories_consumed, journal)
         if (calories_consumed !== this.state.totalCalories){
             journal.attributes.foods.forEach((item) => {
-                // console.log(item.calories)
-                // console.log(this.state.totalCalories)
                 this.setState({
-                    totalCalories: parseInt(this.state.totalCalories) + parseInt(item.calories)
+                    totalCalories: parseInt(this.state.totalCalories) + parseInt(item.calories),
+                    totalProtein: parseInt(this.state.totalProtein) + parseInt(item.protein),
+                    totalFat: parseInt(this.state.totalFat) + parseInt(item.fat),
+                    totalCarb: parseInt(this.state.totalCarb) + parseInt(item.carb)
                 })
             })
             this.postCaloriesConsumed()
@@ -90,12 +86,12 @@ class FoodContainer extends React.Component {
     }
 
     postCaloriesConsumed(){
+        //Add this after assessment
         console.log("Impliment this in v2 to have calories consumed corrected")
     }
 
     createJournal() {
         const user_id = localStorage.getItem('user')
-        //post req to create journal
         console.log("create journal")
         fetch("http://localhost:3000/api/v1/journals", {
             method: 'POST',
@@ -120,7 +116,7 @@ class FoodContainer extends React.Component {
                     <h3 className ="info">Journal Date: {this.state.date}  Calorie Goal: {this.state.calorie_goal} cals</h3>
                     <h3 className="info">Goal Protein: {this.state.protein_goal}g Goal Fat: {this.state.fat_goal}g Goal Carb: {this.state.carb_goal}g</h3>
                     <h3 className="info">Calories Consumed: {this.state.totalCalories} cals </h3>
-                    <h3 className="info">Consumed Protein: Consumed Fat: Consumed Carb: </h3>
+                    <h3 className="info">Consumed Protein: {this.state.totalProtein}g Consumed Fat: {this.state.totalFat}g Consumed Carb: {this.state.totalCarb}g</h3>
                     <ul className="meals">
                     {this.state.foods.map((item, index) => {
                         return (
