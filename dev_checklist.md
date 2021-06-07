@@ -34,14 +34,10 @@ Sign up/login to dos
 
 myDiary to dos
 [X] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
-[] - format the myDiary data
-[] - Make meal component that will hold food
-[] - Add food form
-[] - POST req for food being added
-    - POST to food
-[] - upon creation of journal, also create Journal with 3 meals - Breakfast, Lunch and Dinner?
-[X] - adding food form
-[] - save button action
+[] - Change up backend so there are no longer meals and just food belongs to journal
+[] - List all food that belongs to user
+[] - Have form render and save for adding food to journal
+[] - Have food add to the bottom of the list when form is submitted
 
 [X] - Pass goal_id to goalfrom to patch the right goal
 [X] - Goal needs to handle case of no goal
@@ -62,7 +58,7 @@ myDiary to dos
 [] - have sign up check if user exists
 
 # Sections
-[] Login/sign up page
+[X] Login/sign up page
     - form for login
     - link to sign up page
     - form for sign in
