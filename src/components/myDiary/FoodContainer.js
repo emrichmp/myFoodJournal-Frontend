@@ -11,6 +11,9 @@ class FoodContainer extends React.Component {
         foods: [],
         calories_consumed: "",
         calorie_goal: "",
+        protein_goal: "",
+        fat_goal: "",
+        carb_goal: "",
         journal_id: "",
         totalCalories: 0
     }
@@ -41,8 +44,12 @@ class FoodContainer extends React.Component {
                 if (Object.keys(result.data).length === 0){
                     console.log("no goals")
                 } else {
+                    console.log(result.data.attributes.goal)
                     this.setState({
-                        calorie_goal: result.data.attributes.goal.calories
+                        calorie_goal: result.data.attributes.goal.calories,
+                        protein_goal: result.data.attributes.goal.protein,
+                        fat_goal: result.data.attributes.goal.fats,
+                        carb_goal: result.data.attributes.goal.carbs
                     })
                 }
             })
@@ -95,7 +102,6 @@ class FoodContainer extends React.Component {
             headers: {"Content-Type": "application/json; charset=UTF-8"},
             body: JSON.stringify({
                     date: new Date().toISOString().slice(0, 10),
-                    //THIS NEED TO BE CHANGED TO REAL ID
                     user_id: user_id,
                     calories_consumed: 0
             })
@@ -111,8 +117,10 @@ class FoodContainer extends React.Component {
             <div>
                 <AddFoods journal_id={this.state.journal_id}/>
                 <div className="diary-container">
-                    <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: {this.state.calorie_goal}
-                    cals --------------------------- Calories Consumed: {this.state.totalCalories} cals </h3>
+                    <h3 className ="info">Journal Date: {this.state.date}  Calorie Goal: {this.state.calorie_goal} cals</h3>
+                    <h3 className="info">Goal Protein: {this.state.protein_goal}g Goal Fat: {this.state.fat_goal}g Goal Carb: {this.state.carb_goal}g</h3>
+                    <h3 className="info">Calories Consumed: {this.state.totalCalories} cals </h3>
+                    <h3 className="info">Consumed Protein: Consumed Fat: Consumed Carb: </h3>
                     <ul className="meals">
                     {this.state.foods.map((item, index) => {
                         return (
@@ -126,7 +134,5 @@ class FoodContainer extends React.Component {
         )
     }
 }
-
-//<li key={index}>{item.name} {item.calories} cals {item.protein} P {item.fat} F {item.carb} C</li>
 
 export default FoodContainer
