@@ -1,6 +1,7 @@
 import React from 'react';
 import AddFoods from './AddFoods';
 import FoodItem from './FoodItem'
+import Delete from './Delete'
 
 class FoodContainer extends React.Component {
 
@@ -96,7 +97,7 @@ class FoodContainer extends React.Component {
                     {this.state.foods.map((item, index) => {
                         return (
                         <li key={index}> <FoodItem name={item.name} calories={item.calories} protein={item.protein} 
-                        fat={item.fat} carb={item.carb}/> </li>
+                        fat={item.fat} carb={item.carb}/> <Delete foodId={item.id}/></li>
                         )
                     })}
                     </ul>

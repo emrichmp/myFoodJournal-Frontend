@@ -11,7 +11,7 @@ class AddFoods extends React.Component {
     }
 
     clickHandler = (event) => {
-        event.preventDefault()
+        //event.preventDefault()
         let name = this.state.name
         let calories = this.state.calories
         let protein = this.state.protein
