@@ -11,7 +11,8 @@ class FoodContainer extends React.Component {
         foods: [],
         calories_consumed: "",
         calorie_goal: "",
-        journal_id: ""
+        journal_id: "",
+        totalCalories: 0
     }
 
     componentDidMount(){
@@ -59,11 +60,30 @@ class FoodContainer extends React.Component {
                 calories_consumed: journal.attributes.calories_consumed,
                 journal_id: journal.id
             })
+            this.totalCalories(journal.attributes.calories_consumed, journal)
             //Remove this when finished!
-            console.log(this.state.journal_id)
-            console.log(this.state.foods)
+            //console.log(this.state.journal_id)
+            //console.log(this.state.foods)
             //console.log(this.state.meals)
         }
+    }
+
+    totalCalories(calories_consumed, journal){
+        //console.log(calories_consumed, journal)
+        if (calories_consumed !== this.state.totalCalories){
+            journal.attributes.foods.forEach((item) => {
+                // console.log(item.calories)
+                // console.log(this.state.totalCalories)
+                this.setState({
+                    totalCalories: parseInt(this.state.totalCalories) + parseInt(item.calories)
+                })
+            })
+            this.postCaloriesConsumed()
+        }
+    }
+
+    postCaloriesConsumed(){
+        console.log("Impliment this in v2 to have calories consumed corrected")
     }
 
     createJournal() {
@@ -92,7 +112,7 @@ class FoodContainer extends React.Component {
                 <AddFoods journal_id={this.state.journal_id}/>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: {this.state.calorie_goal}
-                    cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
+                    cals --------------------------- Calories Consumed: {this.state.totalCalories} cals </h3>
                     <ul className="meals">
                     {this.state.foods.map((item, index) => {
                         return (
