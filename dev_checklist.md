@@ -44,7 +44,7 @@ myDiary to dos
 [X] - pass journal id to AddFoods(form) as a prop, use this for post fetch
 [X] - When "add food" button clicked, post food item to that journal
 [X] - Get new FoodItem to render on page when that happens
-[] - Refresh page on delete
+[X] - Refresh page on delete
 [] - see if myGoal situation can be fixed
     - Have goal update state and not refresh page on form submit
 [] - Clean up, see if things can be refactor or whatever
