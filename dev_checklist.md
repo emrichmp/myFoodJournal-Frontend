@@ -47,7 +47,7 @@ myDiary to dos
 [X] - Goal needs to handle case of no goal
 [X] - Have a goal created if no goal is present
 [] - Have goal update state and not refresh page on form submit
-[] - Get logout button to work
+[X] - Get logout button to work
 
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
