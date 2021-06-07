@@ -1,4 +1,5 @@
 import React from 'react';
+import AddFoods from './AddFoods';
 import FoodItem from './FoodItem'
 
 class FoodContainer extends React.Component {
@@ -8,7 +9,8 @@ class FoodContainer extends React.Component {
         date: "",
         foods: [],
         calories_consumed: "",
-        calorie_goal: ""
+        calorie_goal: "",
+        journal_id: ""
     }
 
     componentDidMount(){
@@ -54,9 +56,10 @@ class FoodContainer extends React.Component {
                 date: journal.attributes.date,
                 foods: journal.attributes.foods,
                 calories_consumed: journal.attributes.calories_consumed,
+                journal_id: journal.id
             })
             //Remove this when finished!
-            //console.log(journal)
+            console.log(this.state.journal_id)
             console.log(this.state.foods)
             //console.log(this.state.meals)
         }
@@ -85,6 +88,7 @@ class FoodContainer extends React.Component {
     render () {
         return(
             <div>
+                <AddFoods journal_id={this.state.journal_id}/>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: {this.state.calorie_goal}
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>

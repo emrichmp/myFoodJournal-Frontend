@@ -22,20 +22,21 @@ class AddFoods extends React.Component {
 
     fetchHandler(name, calories, protein, fat, carb){
         console.log(name, calories, protein, fat, carb)
+        console.log(this.props.journal_id)
 
-        // fetch("http://localhost:3000/api/v1/foods", {
-        //     method: 'POST',
-        //     headers: {"Content-Type": "application/json; charset=UTF-8"},
-        //     body: JSON.stringify({
-        //             name: name,
-        //             calories: calories,
-        //             protein: protein,
-        //             fat: fat,
-        //             carb: carb,
-        //             user_id: user_id
-        //     })
-        // })
-        // .then(response => response.json())
+        fetch("http://localhost:3000/api/v1/foods", {
+            method: 'POST',
+            headers: {"Content-Type": "application/json; charset=UTF-8"},
+            body: JSON.stringify({
+                    name: name,
+                    calories: calories,
+                    protein: protein,
+                    fat: fat,
+                    carb: carb,
+                    journal_id: this.props.journal_id
+            })
+        })
+        .then(response => response.json())
     }
 
     changeHandler = (event) => {
