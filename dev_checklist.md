@@ -104,6 +104,7 @@ myDiary to dos
     - Navbar - stateless
     - Loginpage - stateless
     - Logout - stateless
+    - myDiary - stateless
 
 [X] - There should be 3 routes
     - home, myDiary, myHistory, myGoals, TDEE, etc...
