@@ -3,6 +3,10 @@ import FoodContainer from "./FoodContainer"
 
 class Mydiary extends React.Component {
 
+    componentDidMount(){
+        window.history.pushState('correct', 'Title', '/');
+    }
+
     render () {
         return(
             <div>
