@@ -1,6 +1,6 @@
 export const MenuItems = [
     {
-        title: 'myDiary',
+        title: 'myJournal',
         url: '/',
         cName: 'nav-links'
     },
