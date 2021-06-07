@@ -111,6 +111,7 @@ class FoodContainer extends React.Component {
     render () {
         return(
             <div>
+                <h2 className="info"> Add your food here! </h2>
                 <AddFoods journal_id={this.state.journal_id}/>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date}  Calorie Goal: {this.state.calorie_goal} cals</h3>
