@@ -10,7 +10,7 @@ class Mydiary extends React.Component {
     render () {
         return(
             <div>
-                <h1 className="Header"> myDiary!</h1>
+                <h1 className="Header"> myJournal!</h1>
                 <FoodContainer />
             </div>
         )
