@@ -228,3 +228,28 @@ select {
 .select-meal {
   width: 7%;
 }
+
+.add-food-inputs {
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 0.2rem 1rem;
+}
+
+.food-button {
+  background-color: #4CAF50;
+  width: 8%;
+  color: white;
+  font-size: small;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+.food-button:hover {
+  background-color: rgb(135, 206, 150);
+}
