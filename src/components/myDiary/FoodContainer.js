@@ -1,4 +1,5 @@
 import React from 'react';
+import FoodItem from './FoodItem'
 
 class FoodContainer extends React.Component {
 
@@ -78,7 +79,8 @@ class FoodContainer extends React.Component {
                     <ul className="meals">
                     {this.state.foods.map((item, index) => {
                         return (
-                        <li key={index}>{item.name} {item.calories} cals {item.protein} P {item.fat} F {item.carb} C</li>
+                        <li key={index}> <FoodItem name={item.name} calories={item.calories} protein={item.protein} 
+                        fat={item.fat} carb={item.carb}/> </li>
                         )
                     })}
                     </ul>
@@ -87,5 +89,7 @@ class FoodContainer extends React.Component {
         )
     }
 }
+
+//<li key={index}>{item.name} {item.calories} cals {item.protein} P {item.fat} F {item.carb} C</li>
 
 export default FoodContainer
