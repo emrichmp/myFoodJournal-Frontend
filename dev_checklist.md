@@ -107,6 +107,7 @@ myDiary to dos
     - Loginpage - stateless
     - Logout - stateless
     - myDiary - stateless
+    - GoalData - stateless
 
 [X] - There should be 3 routes
     - home, myDiary, myHistory, myGoals, TDEE, etc...
