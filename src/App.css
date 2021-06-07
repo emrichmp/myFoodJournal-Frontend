@@ -250,6 +250,7 @@ select {
 
 .add-food-label {
   color: white;
+  font-weight: bold;
 }
 
 .add-food {
