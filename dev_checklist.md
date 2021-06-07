@@ -34,8 +34,10 @@ Sign up/login to dos
 
 myDiary to dos
 [X] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
-[] - Change up backend so there are no longer meals and just food belongs to journal
+[X] - NO NEED - Change up backend so there are no longer meals and just food belongs to journal
 [] - List all food that belongs to user
+    - iterate thru array and then pass the food instance as a prop and have each food item be a component
+    - this way when a food is added it will be able to call the same component and pass the new data as a prop aswell
 [] - Have form render and save for adding food to journal
 [] - Have food add to the bottom of the list when form is submitted
 
