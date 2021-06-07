@@ -13,6 +13,7 @@ class Delete extends React.Component {
         fetch(`http://localhost:3000/api/v1/foods/${id}`, {
         method: 'DELETE'
         })
+        window.location.reload();
     }
     
     render(){
