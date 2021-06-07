@@ -219,14 +219,9 @@ select {
   padding: 0.5rem 7rem;
 }
 
-.meals {
-  background: rgb(207, 209, 211);
+.foods {
   color: black;
   text-align: center;
-}
-
-.select-meal {
-  width: 7%;
 }
 
 .add-food-inputs {

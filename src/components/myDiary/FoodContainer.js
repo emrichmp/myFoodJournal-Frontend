@@ -117,7 +117,7 @@ class FoodContainer extends React.Component {
                     <h3 className="info">Goal Protein: {this.state.protein_goal}g Goal Fat: {this.state.fat_goal}g Goal Carb: {this.state.carb_goal}g</h3>
                     <h3 className="info">Calories Consumed: {this.state.totalCalories} cals </h3>
                     <h3 className="info">Consumed Protein: {this.state.totalProtein}g Consumed Fat: {this.state.totalFat}g Consumed Carb: {this.state.totalCarb}g</h3>
-                    <ul className="meals">
+                    <ul className="foods">
                     {this.state.foods.map((item, index) => {
                         return (
                         <li key={index}> <FoodItem name={item.name} calories={item.calories} protein={item.protein} 
