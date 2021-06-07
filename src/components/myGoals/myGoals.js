@@ -1,4 +1,5 @@
 import React from 'react';
+import GoalData from './GoalData';
 import GoalForm from './GoalForm'
 
 class Mygoals extends React.Component {
@@ -72,9 +73,9 @@ class Mygoals extends React.Component {
                 <h1 className="Header"> myGoals! </h1>
                 <div className="goal-data">
                     <h4>{this.state.error}</h4>
-                    <h2>Weight Goal: {this.state.goalWeight} </h2>
-                    <h2>Calorie Goal: {this.state.calories} </h2>
-                    <h2>Macro Goal: {this.state.macros} </h2>
+                    <GoalData goalWeight={this.state.goalWeight} 
+                    calories={this.state.calories} 
+                    macros={this.state.macros} />
                     <button className="goal-edit-button" onClick={this.handleClick}>Edit Goals</button>
                 </div>
                 <div>{this.state.form}</div>
