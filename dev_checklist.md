@@ -45,6 +45,7 @@ myDiary to dos
 [X] - When "add food" button clicked, post food item to that journal
 [X] - Get new FoodItem to render on page when that happens
 [X] - Refresh page on delete
+[] - updates calories consumed
 [] - see if myGoal situation can be fixed
     - Have goal update state and not refresh page on form submit
 [] - Clean up, see if things can be refactor or whatever
