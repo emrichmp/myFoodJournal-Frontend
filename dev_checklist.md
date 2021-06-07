@@ -102,7 +102,7 @@ myDiary to dos
 
 [X] - Your app should have one HTML page to render your react-redux application
 
-[ ] - There should be 5 stateless components
+[X] - There should be 5 stateless components
     - Navbar - stateless
     - Loginpage - stateless
     - Logout - stateless
