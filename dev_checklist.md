@@ -38,13 +38,19 @@ myDiary to dos
 [X] - List all food that belongs to user
     - iterate thru array and then pass the food instance as a prop and have each food item be a component
     - this way when a food is added it will be able to call the same component and pass the new data as a prop aswell
-[] - Have form render and save for adding food to journal
-[] - Have food add to the bottom of the list when form is submitted
+
+[] - Edit backend to make food belong to journal, get rid of meals
+[] - Have food correctly pull from journal on fetch
+[] - pass journal id to AddFoods(form) as a prop, use this for post fetch
+[] - When "add food" button clicked, post food item to that journal
+[] - Get new FoodItem to render on page when that happens
+[] - see if myGoal situation can be fixed
+    - Have goal update state and not refresh page on form submit
+[] - Clean up, see if things can be refactor or whatever
 
 [X] - Pass goal_id to goalfrom to patch the right goal
 [X] - Goal needs to handle case of no goal
 [X] - Have a goal created if no goal is present
-[] - Have goal update state and not refresh page on form submit
 [X] - Get logout button to work
 
 # NEED
