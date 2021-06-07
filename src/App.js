@@ -7,7 +7,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import Tdee from "./components/Tdee"
-import Mydiary from './components/myDiary/myDiary';
+import Mydiary from './components/myDiary/MyDiary';
 import Mygoals from './components/myGoals/myGoals';
 import myHistory from './components/myHistory';
 import Loginpage from './components/Login/Loginpage';
