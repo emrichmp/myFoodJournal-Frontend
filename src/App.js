@@ -11,6 +11,7 @@ import Mydiary from './components/myDiary/myDiary';
 import Mygoals from './components/myGoals/myGoals';
 import myHistory from './components/myHistory';
 import Loginpage from './components/Login/Loginpage';
+import Logout from './components/Logout';
 
 import { connect } from "react-redux"
 
@@ -24,9 +25,10 @@ class App extends React.Component {
                 <Navbar />
                 <div className="content">
                   <Route exact path="/tdee" component={Tdee}/>
-                  <Route exact path="/myDiary" component={Mydiary}/>
+                  <Route exact path="/" component={Mydiary}/>
                   <Route exact path="/myGoals" component={Mygoals}/>
                   <Route exact path="/myHistory" component={myHistory}/>
+                  <Route exact path="/logout" component={Logout} />
                 </div>
               </HashRouter>
             </div>
