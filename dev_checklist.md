@@ -39,8 +39,8 @@ myDiary to dos
     - iterate thru array and then pass the food instance as a prop and have each food item be a component
     - this way when a food is added it will be able to call the same component and pass the new data as a prop aswell
 
-[] - Edit backend to make food belong to journal, get rid of meals
-[] - Have food correctly pull from journal on fetch
+[X] - Edit backend to make food belong to journal, get rid of meals
+[X] - Make sure food correctly pull from journal on fetch
 [] - pass journal id to AddFoods(form) as a prop, use this for post fetch
 [] - When "add food" button clicked, post food item to that journal
 [] - Get new FoodItem to render on page when that happens
