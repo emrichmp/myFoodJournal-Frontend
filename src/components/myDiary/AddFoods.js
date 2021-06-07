@@ -11,7 +11,6 @@ class AddFoods extends React.Component {
     }
 
     clickHandler = (event) => {
-        //event.preventDefault()
         let name = this.state.name
         let calories = this.state.calories
         let protein = this.state.protein
@@ -48,7 +47,6 @@ class AddFoods extends React.Component {
     render () {
         return(
             <div>
-                <button className="save-button">Save Diary!</button>
                 <form className="add-food">
                     <label>Food Name: </label>
                     <input className="add-food-inputs" type="text" name="name" placeholder="ex: chicken" onChange={this.changeHandler} />
