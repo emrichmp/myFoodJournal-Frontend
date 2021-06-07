@@ -8,6 +8,7 @@ class FoodContainer extends React.Component {
         date: "",
         foods: [],
         calories_consumed: "",
+        calorie_goal: ""
     }
 
     componentDidMount(){
@@ -29,6 +30,18 @@ class FoodContainer extends React.Component {
                 this.fetchHandler()
             }
         )
+        fetch(`http://localhost:3000/api/v1/users/${user_id}`)
+        .then(response => response.json())
+        .then(
+            (result) => {
+                if (Object.keys(result.data).length === 0){
+                    console.log("no goals")
+                } else {
+                    this.setState({
+                        calorie_goal: result.data.attributes.goal.calories
+                    })
+                }
+            })
     }
 
     fetchHandler(){
@@ -74,7 +87,7 @@ class FoodContainer extends React.Component {
             <div>
                 <h1 className="Header"> myDiary!</h1>
                 <div className="diary-container">
-                    <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: 
+                    <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: {this.state.calorie_goal}
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
                     <ul className="meals">
                     {this.state.foods.map((item, index) => {
