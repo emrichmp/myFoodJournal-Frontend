@@ -50,7 +50,7 @@ myDiary to dos
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
     [X] - in myGoals and GoalForm and myHistory and myDiary
-- Divide up component duties and get to 5 stateless components
+[X] - Divide up component duties and get to 5 stateless components
 - Fix validation for password/fix has_secure_password
 
 # Stretch Goals:
