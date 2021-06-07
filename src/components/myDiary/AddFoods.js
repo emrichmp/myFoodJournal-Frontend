@@ -48,15 +48,15 @@ class AddFoods extends React.Component {
         return(
             <div>
                 <form className="add-food">
-                    <label>Food Name: </label>
+                    <label className="add-food-label">Food Name: </label>
                     <input className="add-food-inputs" type="text" name="name" placeholder="ex: chicken" onChange={this.changeHandler} />
-                    <label>Calories: </label>
+                    <label className="add-food-label">Calories: </label>
                     <input className="add-food-inputs" type="text" name="calories" placeholder="cals" onChange={this.changeHandler} />
-                    <label>Protein: </label>
+                    <label className="add-food-label">Protein: </label>
                     <input className="add-food-inputs" type="text" name="protein" placeholder="g" onChange={this.changeHandler} />
-                    <label>Fat: </label>
+                    <label className="add-food-label">Fat: </label>
                     <input className="add-food-inputs" type="text" name="fat" placeholder="g" onChange={this.changeHandler} />
-                    <label>Carb: </label>
+                    <label className="add-food-label">Carb: </label>
                     <input className="add-food-inputs" type="text" name="carb" placeholder="g" onChange={this.changeHandler} />
                     <button className="food-button" onClick={this.clickHandler} > Add Food to Diary </button>
                 </form>

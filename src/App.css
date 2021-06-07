@@ -247,3 +247,11 @@ select {
 .food-button:hover {
   background-color: rgb(135, 206, 150);
 }
+
+.add-food-label {
+  color: white;
+}
+
+.add-food {
+  text-align: center;
+}
