@@ -7,8 +7,9 @@ class Mydiary extends React.Component {
     render () {
         return(
             <div>
-                <FoodContainer />
+                <h1 className="Header"> myDiary!</h1>
                 <AddFoods />
+                <FoodContainer />
             </div>
         )
     }

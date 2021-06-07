@@ -85,7 +85,6 @@ class FoodContainer extends React.Component {
     render () {
         return(
             <div>
-                <h1 className="Header"> myDiary!</h1>
                 <div className="diary-container">
                     <h3 className ="info">Journal Date: {this.state.date} --------------------------- Calorie Goal: {this.state.calorie_goal}
                     cals --------------------------- Calories Consumed: {this.state.calories_consumed} cals </h3>
