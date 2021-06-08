@@ -1,4 +1,5 @@
 import React from 'react';
+import JournalHistory from './JournalHistory';
 
 class myHistory extends React.Component {
 
@@ -44,7 +45,8 @@ class myHistory extends React.Component {
                     {this.state.journalData.map((item, index) => {
                         return(
                             <li key={index}>
-                                Diary Date: {item.date} Caloric Intake:{item.calories_consumed} Remainder: {item.calories_consumed - this.state.goalCalories}
+                                <JournalHistory date={item.date} calories_consumed={item.calories_consumed}
+                                goalCalories={this.state.goalCalories}/>
                             </li>
                         )
                     })}
