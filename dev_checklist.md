@@ -114,7 +114,8 @@ myDiary to dos
     - Logout - stateless
     - myDiary - stateless
     - GoalData - stateless
-
+    - JournalHistory - stateless
+    
 [X] - There should be 3 routes
     - myDiary - '/', /myHistory, /myGoals, /TDEE, /logout
 
