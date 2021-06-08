@@ -52,7 +52,7 @@ myDiary to dos
 [X] - break up myHistory - make a 6th stateless component
 [X] - replace lets w/ const
 [X] - break up TDEE
-[] - Redux-Thunk?
+[X] - Redux-Thunk?
 
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
