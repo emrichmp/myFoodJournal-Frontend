@@ -9,7 +9,7 @@ import {
 import Tdee from "./components/Tdee"
 import Mydiary from './components/myDiary/MyDiary';
 import Mygoals from './components/myGoals/myGoals';
-import myHistory from './components/myHistory';
+import myHistory from './components/myHistory/myHistory';
 import Loginpage from './components/Login/Loginpage';
 import Logout from './components/Logout';
 
