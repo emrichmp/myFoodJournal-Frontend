@@ -12,8 +12,8 @@ class LoginForm extends React.Component {
 
     submitHandler = (event) => {
         event.preventDefault()
-        let password = this.state.password
-        let email = this.state.email
+        const password = this.state.password
+        const email = this.state.email
         this.fetchHandler(email, password)
     }
 
