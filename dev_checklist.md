@@ -49,7 +49,7 @@ myDiary to dos
 [X] - Have a goal created if no goal is present
 [X] - Get logout button to work
 
-[] - break up myHistory - make a 6th stateless component
+[X] - break up myHistory - make a 6th stateless component
 [] - replace lets w/ const
 [] - Redux-Thunk?
 [] - Figure out login thing
@@ -115,7 +115,7 @@ myDiary to dos
     - myDiary - stateless
     - GoalData - stateless
     - JournalHistory - stateless
-    
+
 [X] - There should be 3 routes
     - myDiary - '/', /myHistory, /myGoals, /TDEE, /logout
 
