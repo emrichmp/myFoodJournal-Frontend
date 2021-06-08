@@ -50,7 +50,8 @@ myDiary to dos
 [X] - Get logout button to work
 
 [X] - break up myHistory - make a 6th stateless component
-[] - replace lets w/ const
+[X] - replace lets w/ const
+[X] - break up TDEE
 [] - Redux-Thunk?
 [] - Figure out login thing
 [] - Fix validation for password/fix has_secure_password
