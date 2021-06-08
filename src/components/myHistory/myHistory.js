@@ -26,7 +26,7 @@ class myHistory extends React.Component {
         )
     }
     historyHandler(calories, journals) {
-        let journal_data = journals.map((journal) => {
+        const journal_data = journals.map((journal) => {
             return {date: journal.date, calories_consumed: journal.calories_consumed}
         })
         this.setState({
