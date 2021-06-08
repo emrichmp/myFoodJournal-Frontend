@@ -21,6 +21,7 @@ class App extends React.Component {
   handleOnClick(){
     this.props.fetchData()
   }
+  //Using <HashRouter> b/c according to router doc, it doesn't require special server config
 
   render () {
     const food = this.props.food
