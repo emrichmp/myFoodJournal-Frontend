@@ -13,9 +13,9 @@ class SignUpForm extends React.Component {
     submitHandler = (event) => {
         event.preventDefault()
         if (this.state.password === this.state.confirm){
-            let email = this.state.email
-            let password = this.state.password
-            let weight = this.state.weight
+            const email = this.state.email
+            const password = this.state.password
+            const weight = this.state.weight
             this.postHandler(email, password, weight)
         } else {
             this.setState({
