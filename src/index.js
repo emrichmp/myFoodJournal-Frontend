@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-import { createStore } from "redux";
-import { Provider } from "react-redux"
+import { createStore, applyMiddleware} from "redux";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
 
 const initialState = {
-  loggedIn: true
+  loggedIn: true,
+  food: ""
 };
 
 function reducer(state = initialState, action) {
@@ -26,12 +28,39 @@ function reducer(state = initialState, action) {
         return {
           loggedIn: false
         };
+      case 'IMAGE_REQUEST':
+        return {
+          ...state,
+          food: ""
+      }
+      case 'ADD_IMAGE':
+          return{
+              ...state,
+              food: `paste this link to see some food: ${JSON.stringify(action.foodpic)}`
+          }
     default:
       return state;
   }
 }
 
-const store = createStore(reducer);
+// function foodReducer(state = { food: "" }, action) {
+//   switch (action.type){
+//       case 'IMAGE_REQUEST':
+//       return {
+//           ...state,
+//           food: "Fuck"
+//       }
+//       case 'ADD_IMAGE':
+//           return{
+//               ...state,
+//               food: "What the Fuck"
+//           }
+//           default:
+//               return state;
+//   }
+// }
+
+const store = createStore(reducer, applyMiddleware(thunk));
 
   ReactDOM.render(
     <React.StrictMode>

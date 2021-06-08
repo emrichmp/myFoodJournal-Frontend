@@ -12,17 +12,25 @@ import Mygoals from './components/myGoals/myGoals';
 import myHistory from './components/myHistory/myHistory';
 import Loginpage from './components/Login/Loginpage';
 import Logout from './components/Logout';
+import { fetchData } from './components/actions/fetchData';
 
 import { connect } from "react-redux"
 
 class App extends React.Component {
 
+  handleOnClick(){
+    this.props.fetchData()
+  }
+
   render () {
+    const food = this.props.food
     if (this.props.loggedIn === true) {
     return (
             <div className="App">
               <HashRouter>
                 <Navbar />
+                <button onClick={(event) => this.handleOnClick(event)}>Random Food</button>
+                  {food}
                 <div className="content">
                   <Route exact path="/tdee" component={Tdee}/>
                   <Route exact path="/" component={Mydiary}/>
@@ -41,8 +49,13 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  loggedIn: state.loggedIn
-})
+function mapDispatchToProps(dispatch){
+  return { fetchData: () => dispatch(fetchData())}
+}
 
-export default connect(mapStateToProps)(App);
+function mapStateToProps(state){
+  return {food: state.food,
+  loggedIn: state.loggedIn}
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
