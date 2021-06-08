@@ -1,4 +1,5 @@
 import React from 'react';
+import ResultTdee from "./ResultTdee"
 
 class Tdee extends React.Component {
 
@@ -89,7 +90,7 @@ class Tdee extends React.Component {
                     Here is your estimated calorie consumption based on your goals and a recommended macro breakdown!
                 </div>
                 <div className="result">
-                        Calories: {this.state.tdee} Protein: {this.state.tdee_protein} Fats: {this.state.tdee_fats} Carbs: {this.state.tdee_carbs}
+                        <ResultTdee tdee={this.state.tdee} tdee_protein={this.state.tdee_protein} tdee_fats={this.state.tdee_fats} tdee_carbs={this.state.tdee_carbs} />
                 </div>
                 <div className="disclaimer">
                     ** DISCLAIMER: These results are loosely based off the research of Jeff Nippard and the bmr algorithm from the <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee"> Harris-Benedict Equation </a>, you may need to consume slightly more or less calories based on activity level **
