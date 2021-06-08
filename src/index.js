@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
 import { createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
@@ -42,23 +41,6 @@ function reducer(state = initialState, action) {
       return state;
   }
 }
-
-// function foodReducer(state = { food: "" }, action) {
-//   switch (action.type){
-//       case 'IMAGE_REQUEST':
-//       return {
-//           ...state,
-//           food: "Fuck"
-//       }
-//       case 'ADD_IMAGE':
-//           return{
-//               ...state,
-//               food: "What the Fuck"
-//           }
-//           default:
-//               return state;
-//   }
-// }
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
