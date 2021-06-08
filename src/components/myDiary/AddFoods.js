@@ -11,11 +11,11 @@ class AddFoods extends React.Component {
     }
 
     clickHandler = (event) => {
-        let name = this.state.name
-        let calories = this.state.calories
-        let protein = this.state.protein
-        let fat = this.state.fat
-        let carb = this.state.carb
+        const name = this.state.name
+        const calories = this.state.calories
+        const protein = this.state.protein
+        const fat = this.state.fat
+        const carb = this.state.carb
         this.fetchHandler(name, calories, protein, fat, carb)
     }
 

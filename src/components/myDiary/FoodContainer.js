@@ -72,7 +72,6 @@ class FoodContainer extends React.Component {
     }
 
     totalCalories(calories_consumed, journal){
-        if (calories_consumed !== this.state.totalCalories){
             journal.attributes.foods.forEach((item) => {
                 this.setState({
                     totalCalories: parseInt(this.state.totalCalories) + parseInt(item.calories),
@@ -81,14 +80,14 @@ class FoodContainer extends React.Component {
                     totalCarb: parseInt(this.state.totalCarb) + parseInt(item.carb)
                 })
             })
-            this.postCaloriesConsumed()
-        }
+            //this.postCaloriesConsumed()
     }
 
-    postCaloriesConsumed(){
-        //Add this after assessment
-        console.log("Impliment this in v2 to have calories consumed corrected")
-    }
+    // postCaloriesConsumed(){
+    //     //Add this after assessment
+    //     //Readd caloriesconsumed vs totalcals
+    //     //console.log("Impliment this in v2 to have calories consumed corrected")
+    // }
 
     createJournal() {
         const user_id = localStorage.getItem('user')
