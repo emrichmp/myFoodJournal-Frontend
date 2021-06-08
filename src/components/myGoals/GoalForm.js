@@ -10,10 +10,6 @@ class GoalForm extends React.Component {
         goalcarbs: ""
     }
 
-    // componentDidMount() {
-    //     window.history.pushState('correct', 'Title', '/myGoals');
-    // }
-
     submitHandler = (event) => {
         let goalweight = this.state.goalweight
         let goalcalories = this.state.goalcalories

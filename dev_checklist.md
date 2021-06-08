@@ -31,38 +31,34 @@ Sign up/login to dos
    [X] - myGoals
    [X] - myHistory
    [X] - myDiary
-
 myDiary to dos
 [X] - finish POST req to create journal if none exists - dont forget utc - DateTime.now.utc in BACKEND
 [X] - NO NEED - Change up backend so there are no longer meals and just food belongs to journal
 [X] - List all food that belongs to user
     - iterate thru array and then pass the food instance as a prop and have each food item be a component
     - this way when a food is added it will be able to call the same component and pass the new data as a prop aswell
-
 [X] - Edit backend to make food belong to journal, get rid of meals
 [X] - Make sure food correctly pull from journal on fetch
 [X] - pass journal id to AddFoods(form) as a prop, use this for post fetch
 [X] - When "add food" button clicked, post food item to that journal
 [X] - Get new FoodItem to render on page when that happens
 [X] - Refresh page on delete
-[] - updates calories consumed
-[] - see if myGoal situation can be fixed
-    - Have goal update state and not refresh page on form submit
-[] - Clean up, see if things can be refactor or whatever
-
+[X] - updates calories consumed
 [X] - Pass goal_id to goalfrom to patch the right goal
 [X] - Goal needs to handle case of no goal
 [X] - Have a goal created if no goal is present
 [X] - Get logout button to work
 
-- Figure out login thing
-- after myGoals posts, have the window.history change
+[] - break up myHistory - make a 6th stateless component
+[] - replace lets w/ const
+[] - Redux-Thunk?
+[] - Figure out login thing
+[] - Fix validation for password/fix has_secure_password
 
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
     [X] - in myGoals and GoalForm and myHistory and myDiary
 [X] - Divide up component duties and get to 5 stateless components
-- Fix validation for password/fix has_secure_password
 
 # Stretch Goals:
 [] - Form validations using onChange
@@ -76,10 +72,9 @@ myDiary to dos
     - link to sign up page
     - form for sign in
 
-[] myDiary page
-    - List meals
+[X] myDiary page
     - List foods under meals
-    - add form under each meal after foods to add a food
+    - add form for foods to add a food
 
 [X] myGoals page 
     [X] - Section for Calorie and Macro goals
@@ -121,7 +116,7 @@ myDiary to dos
     - GoalData - stateless
 
 [X] - There should be 3 routes
-    - home, myDiary, myHistory, myGoals, TDEE, etc...
+    - myDiary - '/', /myHistory, /myGoals, /TDEE, /logout
 
 [X] - The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate
     - Used react-router
@@ -140,6 +135,8 @@ myDiary to dos
 [X] - Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
     - Styled w/ my CSS
 
-[] - 2 Container Components
+[X] - 2 Container Components -  - how things work, they rarely have any html markup stateful, provides data and behavior to children
+    - FoodContainer - fetches data and passes data to <FoodItem /> and <Delete />
+    - myGoal - fetches data and passes data to <GoalData />
 
 [ ] - Once your app is complete, fill out the checklist
