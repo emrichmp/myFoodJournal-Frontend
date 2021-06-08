@@ -29,8 +29,8 @@ class App extends React.Component {
             <div className="App">
               <HashRouter>
                 <Navbar />
-                <button onClick={(event) => this.handleOnClick(event)}>Random Food</button>
-                  {food}
+                <button className="button" onClick={(event) => this.handleOnClick(event)}>Random Food Pic</button>
+                  <p className="disclaimer">{food} </p>
                 <div className="content">
                   <Route exact path="/tdee" component={Tdee}/>
                   <Route exact path="/" component={Mydiary}/>

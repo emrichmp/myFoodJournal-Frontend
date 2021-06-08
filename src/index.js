@@ -36,7 +36,7 @@ function reducer(state = initialState, action) {
       case 'ADD_IMAGE':
           return{
               ...state,
-              food: `paste this link to see some food: ${JSON.stringify(action.foodpic)}`
+              food: `copy & paste this link to see some food: ${JSON.stringify(action.foodpic)}`
           }
     default:
       return state;
