@@ -53,8 +53,6 @@ myDiary to dos
 [X] - replace lets w/ const
 [X] - break up TDEE
 [] - Redux-Thunk?
-[] - Figure out login thing
-[] - Fix validation for password/fix has_secure_password
 
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
@@ -62,6 +60,8 @@ myDiary to dos
 [X] - Divide up component duties and get to 5 stateless components
 
 # Stretch Goals:
+[] - Figure out login thing
+[] - Fix validation for password/fix has_secure_password
 [] - Form validations using onChange
 [] - have form render in and out
 [] - error messages for mis input
