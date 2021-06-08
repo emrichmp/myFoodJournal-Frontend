@@ -14,6 +14,10 @@ class LoginForm extends React.Component {
         event.preventDefault()
         const password = this.state.password
         const email = this.state.email
+        // this.setState({
+        //  email: ""
+        // })
+        // console.log(this.state.email)
         this.fetchHandler(email, password)
     }
 
@@ -57,7 +61,7 @@ class LoginForm extends React.Component {
                 <h2 className="error">{this.state.error}</h2>
                 <label>
                     Email:
-                    <input className="login-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} />
+                    <input className="login-input" type="text" name="email" placeholder="email@gmail.com" onChange={this.changeHandler} value={this.state.email} />
                 </label>
                 <label>
                     Password:

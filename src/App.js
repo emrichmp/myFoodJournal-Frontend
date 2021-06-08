@@ -14,6 +14,8 @@ import Loginpage from './components/Login/Loginpage';
 import Logout from './components/Logout';
 import { fetchData } from './components/actions/fetchData';
 
+import Assessment from './components/Assessment';
+
 import { connect } from "react-redux"
 
 class App extends React.Component {
@@ -33,6 +35,7 @@ class App extends React.Component {
                 <button className="button" onClick={(event) => this.handleOnClick(event)}>Random Food Pic</button>
                   <p className="disclaimer">{food} </p>
                 <div className="content">
+                  <Assessment />
                   <Route exact path="/tdee" component={Tdee}/>
                   <Route exact path="/" component={Mydiary}/>
                   <Route exact path="/myGoals" component={Mygoals}/>

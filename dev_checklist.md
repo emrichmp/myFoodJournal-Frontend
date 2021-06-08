@@ -54,6 +54,8 @@ myDiary to dos
 [X] - break up TDEE
 [X] - Redux-Thunk?
 
+higher order function connecting to make the connected comp a higher order comp
+
 # NEED
 [X] - need to make sure user_id and goal_id is the one for the actual user, not 1
     [X] - in myGoals and GoalForm and myHistory and myDiary
