@@ -22,6 +22,7 @@ class Assessment extends React.Component {
                         <input type="number" name="number" value={this.state.number} onChange={this.changeHandler}/>
                     <label>String</label>
                         <input type="text" name="string" maxLength = {this.state.number} value={this.state.string} onChange={this.changeHandler} />
+                        {console.log(this.state.number, this.state.string.length)}
                 </form>
             </div>
         )
