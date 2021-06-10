@@ -103,6 +103,9 @@ higher order function connecting to make the connected comp a higher order comp
     Men BMR = 66 + (13.7 X weight in kg) + (5 x height in cm) – (6.8 x age in yrs)
     https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee
 
+    look into hooks and context api
+    having depth of knowledge is better than varience
+
 # Requirements
 
 [X] - The code should be written in ES6 as much as possible
