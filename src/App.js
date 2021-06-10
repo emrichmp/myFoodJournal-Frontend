@@ -26,16 +26,13 @@ class App extends React.Component {
   //Using <HashRouter> b/c according to router doc, it doesn't require special server config
 
   render () {
-    const food = this.props.food
     if (this.props.loggedIn === true) {
     return (
             <div className="App">
               <HashRouter>
                 <Navbar />
-                <button className="button" onClick={(event) => this.handleOnClick(event)}>Random Food Pic</button>
-                  <p className="disclaimer">{food} </p>
                 <div className="content">
-                  <Assessment />
+                  <Route exact path="/livecode" component={Assessment}/>
                   <Route exact path="/tdee" component={Tdee}/>
                   <Route exact path="/" component={Mydiary}/>
                   <Route exact path="/myGoals" component={Mygoals}/>
@@ -52,6 +49,12 @@ class App extends React.Component {
     }
   }
 }
+
+//const food = this.props.food
+
+/* <button className="button" onClick={(event) => this.handleOnClick(event)}>Random Food Pic</button>
+                  <p className="disclaimer">{food} </p> */
+
 
 function mapDispatchToProps(dispatch){
   return { fetchData: () => dispatch(fetchData())}
