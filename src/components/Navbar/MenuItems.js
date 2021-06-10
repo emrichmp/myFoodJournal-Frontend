@@ -24,4 +24,9 @@ export const MenuItems = [
         url: '/logout',
         cName: 'logout'
     },
+    {
+        title: 'Live Code',
+        url: '/livecode',
+        cName: 'nav-links'
+    }
 ]
