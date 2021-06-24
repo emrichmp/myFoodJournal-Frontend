@@ -14,7 +14,7 @@ import Loginpage from './components/Login/Loginpage';
 import Logout from './components/Logout';
 import { fetchData } from './components/actions/fetchData';
 
-import Assessment from './components/Assessment';
+//import Assessment from './components/Assessment';
 
 import { connect } from "react-redux"
 
@@ -32,7 +32,6 @@ class App extends React.Component {
               <HashRouter>
                 <Navbar />
                 <div className="content">
-                  <Route exact path="/livecode" component={Assessment}/>
                   <Route exact path="/tdee" component={Tdee}/>
                   <Route exact path="/" component={Mydiary}/>
                   <Route exact path="/myGoals" component={Mygoals}/>
@@ -49,6 +48,8 @@ class App extends React.Component {
     }
   }
 }
+
+//<Route exact path="/livecode" component={Assessment}/>
 
 //const food = this.props.food
 
