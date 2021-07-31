@@ -36,7 +36,7 @@ class App extends React.Component {
                   <Route exact path="/" component={Mydiary}/>
                   <Route exact path="/myGoals" component={Mygoals}/>
                   <Route exact path="/myHistory" component={myHistory}/>
-                  <Route exact path="/logout" component={Logout} />
+                  {/* <Route exact path="/logout" component={Logout} /> */}
                 </div>
               </HashRouter>
             </div>

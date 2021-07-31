@@ -21,7 +21,8 @@ export const MenuItems = [
     },
     {
         title: 'Logout',
-        url: '/logout',
+        //url: '/logout',
+        url: '/',
         cName: 'logout'
     },
     // {
