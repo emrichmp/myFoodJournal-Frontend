@@ -1,6 +1,7 @@
 ![logo](https://i.ibb.co/sQ6fJbr/Screen-Shot-2021-05-26-at-11-16-32-PM.png)
 
 [Technical Blog Post!](https://emrichmp.medium.com/not-a-great-react-ion-febf70199021)
+
 [Video Demo!](https://emrichmp.medium.com/not-a-great-react-ion-febf70199021)
 
 Backend Repo: https://github.com/emrichmp/myFoodJournal-Backend
